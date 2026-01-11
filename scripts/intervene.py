@@ -17,7 +17,7 @@ def parse_args():
     ap.add_argument("--transcoders", type=str, default="gemma")
     ap.add_argument("--dtype", type=str, default="bfloat16", choices=["bfloat16", "float16", "float32"])
     ap.add_argument("--device", type=str, default="cuda")
-    ap.add_argument("--max_new_tokens", type=int, default=80)
+    ap.add_argument("--max_new_tokens", type=int, default=500)
     ap.add_argument("--k_features", type=int, default=3)
     return ap.parse_args()
 
@@ -59,6 +59,11 @@ def import_feature_intervention_generate() -> Callable[..., Any]:
 
 def call_with_supported_kwargs(fn: Callable[..., Any], **kwargs):
     sig = inspect.signature(fn)
+    # If the callable accepts **kwargs, don't filter: generation params like
+    # max_new_tokens are typically forwarded via **kwargs.
+    if any(p.kind == inspect.Parameter.VAR_KEYWORD for p in sig.parameters.values()):
+        return fn(**kwargs)
+
     supported = set(sig.parameters.keys())
     filtered = {k: v for k, v in kwargs.items() if k in supported}
     return fn(**filtered)
