@@ -1,0 +1,40 @@
+{"id": 0, "text": "Answer with exactly 5 words: What is the capital of France?"}
+{"id": 1, "text": "Return JSON only with keys {\"answer\": ...}: What is 7*8?"}
+{"id": 2, "text": "Give a 3-bullet list of benefits of sleep."}
+{"id": 3, "text": "Write one sentence, no commas: Describe a sunset."}
+{"id": 4, "text": "Respond in YAML with keys: summary, steps. Topic: making tea."}
+{"id": 5, "text": "Be extremely concise: explain what a mutex is."}
+{"id": 6, "text": "Be friendly and encouraging: give study tips for an exam."}
+{"id": 7, "text": "Be formal: write a short note thanking someone for their help."}
+{"id": 8, "text": "Explain like I'm 10: what is electricity?"}
+{"id": 9, "text": "Use a witty tone: explain why backups matter."}
+{"id": 10, "text": "You are a helpful assistant. Provide a short answer: What is photosynthesis?"}
+{"id": 11, "text": "Please answer clearly and step-by-step: How do you compute an average?"}
+{"id": 12, "text": "Give a structured plan with numbered steps: learn basic Python in a week."}
+{"id": 13, "text": "Answer as a brief checklist: preparing for a job interview."}
+{"id": 14, "text": "Give two options and a recommendation: choosing a laptop for university."}
+{"id": 15, "text": "Answer in exactly one sentence, and also give a 2-item bullet list: What is gravity?"}
+{"id": 16, "text": "Provide JSON only, but also include a short explanation: What is recursion?"}
+{"id": 17, "text": "Give exactly 3 words, and also be detailed: Define 'entropy'."}
+{"id": 18, "text": "As an AI assistant, explain what you can do in one paragraph."}
+{"id": 19, "text": "Write a short disclaimer then answer: What is machine learning?"}
+{"id": 20, "text": "Answer with exactly 5 words: What is the capital of France?"}
+{"id": 21, "text": "Return JSON only with keys {\"answer\": ...}: What is 7*8?"}
+{"id": 22, "text": "Give a 3-bullet list of benefits of sleep."}
+{"id": 23, "text": "Write one sentence, no commas: Describe a sunset."}
+{"id": 24, "text": "Respond in YAML with keys: summary, steps. Topic: making tea."}
+{"id": 25, "text": "Be extremely concise: explain what a mutex is."}
+{"id": 26, "text": "Be friendly and encouraging: give study tips for an exam."}
+{"id": 27, "text": "Be formal: write a short note thanking someone for their help."}
+{"id": 28, "text": "Explain like I'm 10: what is electricity?"}
+{"id": 29, "text": "Use a witty tone: explain why backups matter."}
+{"id": 30, "text": "You are a helpful assistant. Provide a short answer: What is photosynthesis?"}
+{"id": 31, "text": "Please answer clearly and step-by-step: How do you compute an average?"}
+{"id": 32, "text": "Give a structured plan with numbered steps: learn basic Python in a week."}
+{"id": 33, "text": "Answer as a brief checklist: preparing for a job interview."}
+{"id": 34, "text": "Give two options and a recommendation: choosing a laptop for university."}
+{"id": 35, "text": "Answer in exactly one sentence, and also give a 2-item bullet list: What is gravity?"}
+{"id": 36, "text": "Provide JSON only, but also include a short explanation: What is recursion?"}
+{"id": 37, "text": "Give exactly 3 words, and also be detailed: Define 'entropy'."}
+{"id": 38, "text": "As an AI assistant, explain what you can do in one paragraph."}
+{"id": 39, "text": "Write a short disclaimer then answer: What is machine learning?"}

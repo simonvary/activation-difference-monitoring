@@ -1,0 +1,300 @@
+{"id": 0, "text": "Answer in exactly one sentence. Use a friendly tone. Explain machine learning. Do not use the word 'very'."}
+{"id": 1, "text": "Answer in exactly two sentences. Use a neutral, technical tone. Compare photosynthesis with a related concept. Include exactly one colon (:) in your response."}
+{"id": 2, "text": "Answer in exactly 5 words. Explain like I'm an expert (compact). Explain gravity. Include one emoji at the end."}
+{"id": 3, "text": "Answer in exactly 12 words. Avoid jargon. Compare inflation with a related concept. Do not use any emojis."}
+{"id": 4, "text": "Respond with a 3-bullet list. Use a formal tone. Explain the water cycle. Avoid the words 'simple' and 'just'."}
+{"id": 5, "text": "Respond with a 5-step numbered plan. Explain like I'm 10. Compare a mutex with a related concept. Use British spelling."}
+{"id": 6, "text": "Respond with a checklist of 7 items. Be extremely concise. Explain unit testing. Use American spelling."}
+{"id": 7, "text": "Respond as a short FAQ with 3 questions. Use minimal jargon but define key terms. Compare REST APIs with a related concept. Include one short example in parentheses."}
+{"id": 8, "text": "Respond as a JSON object with keys: headline, details. Use a witty tone. Explain blockchain. End with a single question."}
+{"id": 9, "text": "Respond as YAML with keys: answer. Explain like I'm a new employee on day 1. Compare climate vs weather with a related concept. Do not ask questions."}
+{"id": 10, "text": "Respond as CSV with headers: concept, analogy, caveat. Be extra clear and step-by-step. Explain compound interest. Do not use the word 'very'."}
+{"id": 11, "text": "Respond as a Markdown table with columns: summary, steps. Use a friendly tone. Compare the French Revolution with a related concept. Include exactly one colon (:) in your response."}
+{"id": 12, "text": "Respond with a tiny analogy and then a definition. Use a neutral, technical tone. Explain supply and demand. Include one emoji at the end."}
+{"id": 13, "text": "Respond with 'TL;DR:' then one line, then details. Explain like I'm an expert (compact). Compare Bayes' theorem with a related concept. Do not use any emojis."}
+{"id": 14, "text": "Respond with a headline and three subpoints. Avoid jargon. Explain linear regression. Avoid the words 'simple' and 'just'."}
+{"id": 15, "text": "Give two options and a recommendation. Use a formal tone. Compare neurons in the brain with a related concept. Use British spelling."}
+{"id": 16, "text": "Give pros and cons (3 each). Explain like I'm 10. Explain vitamin D. Use American spelling."}
+{"id": 17, "text": "Answer in exactly one sentence. Be extremely concise. Compare sleep hygiene with a related concept. Include one short example in parentheses."}
+{"id": 18, "text": "Answer in exactly two sentences. Use minimal jargon but define key terms. Explain time zones. End with a single question."}
+{"id": 19, "text": "Answer in exactly 5 words. Use a witty tone. Compare cryptography basics with a related concept. Do not ask questions."}
+{"id": 20, "text": "Answer in exactly 12 words. Explain like I'm a new employee on day 1. Explain data privacy. Do not use the word 'very'."}
+{"id": 21, "text": "Respond with a 3-bullet list. Be extra clear and step-by-step. Compare version control with a related concept. Include exactly one colon (:) in your response."}
+{"id": 22, "text": "Respond with a 5-step numbered plan. Use a friendly tone. Explain debugging. Include one emoji at the end."}
+{"id": 23, "text": "Respond with a checklist of 7 items. Use a neutral, technical tone. Compare recursion with a related concept. Do not use any emojis."}
+{"id": 24, "text": "Respond as a short FAQ with 3 questions. Explain like I'm an expert (compact). Explain entropy. Avoid the words 'simple' and 'just'."}
+{"id": 25, "text": "Respond as a JSON object with keys: plan, time_estimate, resources. Avoid jargon. Compare probability with a related concept. Use British spelling."}
+{"id": 26, "text": "Respond as YAML with keys: headline, details. Use a formal tone. Explain electric circuits. Use American spelling."}
+{"id": 27, "text": "Respond as CSV with headers: answer. Explain like I'm 10. Compare antibiotic resistance with a related concept. Include one short example in parentheses."}
+{"id": 28, "text": "Respond as a Markdown table with columns: concept, analogy, caveat. Be extremely concise. Explain vaccines. End with a single question."}
+{"id": 29, "text": "Respond with a tiny analogy and then a definition. Use minimal jargon but define key terms. Compare astronomy with a related concept. Do not ask questions."}
+{"id": 30, "text": "Respond with 'TL;DR:' then one line, then details. Use a witty tone. Explain black holes. Do not use the word 'very'."}
+{"id": 31, "text": "Respond with a headline and three subpoints. Explain like I'm a new employee on day 1. Compare the Higgs boson with a related concept. Include exactly one colon (:) in your response."}
+{"id": 32, "text": "Give two options and a recommendation. Be extra clear and step-by-step. Explain quantum superposition. Include one emoji at the end."}
+{"id": 33, "text": "Give pros and cons (3 each). Use a friendly tone. Compare DNA replication with a related concept. Do not use any emojis."}
+{"id": 34, "text": "Answer in exactly one sentence. Use a neutral, technical tone. Explain natural selection. Avoid the words 'simple' and 'just'."}
+{"id": 35, "text": "Answer in exactly two sentences. Explain like I'm an expert (compact). Compare renewable energy with a related concept. Use British spelling."}
+{"id": 36, "text": "Answer in exactly 5 words. Avoid jargon. Explain battery recycling. Use American spelling."}
+{"id": 37, "text": "Answer in exactly 12 words. Use a formal tone. Compare ocean acidification with a related concept. Include one short example in parentheses."}
+{"id": 38, "text": "Respond with a 3-bullet list. Explain like I'm 10. Explain microplastics. End with a single question."}
+{"id": 39, "text": "Respond with a 5-step numbered plan. Be extremely concise. Compare the Linux filesystem with a related concept. Do not ask questions."}
+{"id": 40, "text": "Respond with a checklist of 7 items. Use minimal jargon but define key terms. Explain containerization. Do not use the word 'very'."}
+{"id": 41, "text": "Respond as a short FAQ with 3 questions. Use a witty tone. Compare CI/CD pipelines with a related concept. Include exactly one colon (:) in your response."}
+{"id": 42, "text": "Respond as a JSON object with keys: pros, cons. Explain like I'm a new employee on day 1. Explain database indexes. Include one emoji at the end."}
+{"id": 43, "text": "Respond as YAML with keys: plan, time_estimate, resources. Be extra clear and step-by-step. Compare SQL joins with a related concept. Do not use any emojis."}
+{"id": 44, "text": "Respond as CSV with headers: headline, details. Use a friendly tone. Explain graph algorithms. Avoid the words 'simple' and 'just'."}
+{"id": 45, "text": "Respond as a Markdown table with columns: answer. Use a neutral, technical tone. Compare Dijkstra's algorithm with a related concept. Use British spelling."}
+{"id": 46, "text": "Respond with a tiny analogy and then a definition. Explain like I'm an expert (compact). Explain hash tables. Use American spelling."}
+{"id": 47, "text": "Respond with 'TL;DR:' then one line, then details. Avoid jargon. Compare Big-O notation with a related concept. Include one short example in parentheses."}
+{"id": 48, "text": "Respond with a headline and three subpoints. Use a formal tone. Explain compression. End with a single question."}
+{"id": 49, "text": "Give two options and a recommendation. Explain like I'm 10. Compare HTTP status codes with a related concept. Do not ask questions."}
+{"id": 50, "text": "Give pros and cons (3 each). Be extremely concise. Explain OAuth. Do not use the word 'very'."}
+{"id": 51, "text": "Answer in exactly one sentence. Use minimal jargon but define key terms. Compare public key encryption with a related concept. Include exactly one colon (:) in your response."}
+{"id": 52, "text": "Answer in exactly two sentences. Use a witty tone. Explain phishing awareness. Include one emoji at the end."}
+{"id": 53, "text": "Answer in exactly 5 words. Explain like I'm a new employee on day 1. Compare budgeting with a related concept. Do not use any emojis."}
+{"id": 54, "text": "Answer in exactly 12 words. Be extra clear and step-by-step. Explain meal prep. Avoid the words 'simple' and 'just'."}
+{"id": 55, "text": "Respond with a 3-bullet list. Use a friendly tone. Compare mindfulness with a related concept. Use British spelling."}
+{"id": 56, "text": "Respond with a 5-step numbered plan. Use a neutral, technical tone. Explain public speaking. Use American spelling."}
+{"id": 57, "text": "Respond with a checklist of 7 items. Explain like I'm an expert (compact). Compare negotiation with a related concept. Include one short example in parentheses."}
+{"id": 58, "text": "Respond as a short FAQ with 3 questions. Avoid jargon. Explain reading comprehension. End with a single question."}
+{"id": 59, "text": "Respond as a JSON object with keys: topic, key_points, common_mistake. Use a formal tone. Compare note-taking with a related concept. Do not ask questions."}
+{"id": 60, "text": "Respond as YAML with keys: pros, cons. Explain like I'm 10. Explain spaced repetition. Do not use the word 'very'."}
+{"id": 61, "text": "Respond as CSV with headers: plan, time_estimate, resources. Be extremely concise. Compare goal setting with a related concept. Include exactly one colon (:) in your response."}
+{"id": 62, "text": "Respond as a Markdown table with columns: headline, details. Use minimal jargon but define key terms. Explain project planning. Include one emoji at the end."}
+{"id": 63, "text": "Respond with a tiny analogy and then a definition. Use a witty tone. Compare risk management with a related concept. Do not use any emojis."}
+{"id": 64, "text": "Respond with 'TL;DR:' then one line, then details. Explain like I'm a new employee on day 1. Explain stakeholder communication. Avoid the words 'simple' and 'just'."}
+{"id": 65, "text": "Respond with a headline and three subpoints. Be extra clear and step-by-step. Compare customer support with a related concept. Use British spelling."}
+{"id": 66, "text": "Give two options and a recommendation. Use a friendly tone. Explain writing a resume. Use American spelling."}
+{"id": 67, "text": "Give pros and cons (3 each). Use a neutral, technical tone. Compare interview preparation with a related concept. Include one short example in parentheses."}
+{"id": 68, "text": "Answer in exactly one sentence. Explain like I'm an expert (compact). Explain networking. End with a single question."}
+{"id": 69, "text": "Answer in exactly two sentences. Avoid jargon. Compare product-market fit with a related concept. Do not ask questions."}
+{"id": 70, "text": "Answer in exactly 5 words. Use a formal tone. Explain A/B testing. Do not use the word 'very'."}
+{"id": 71, "text": "Answer in exactly 12 words. Explain like I'm 10. Compare metrics and KPIs with a related concept. Include exactly one colon (:) in your response."}
+{"id": 72, "text": "Respond with a 3-bullet list. Be extremely concise. Explain data visualization. Include one emoji at the end."}
+{"id": 73, "text": "Respond with a 5-step numbered plan. Use minimal jargon but define key terms. Compare experiment design with a related concept. Do not use any emojis."}
+{"id": 74, "text": "Respond with a checklist of 7 items. Use a witty tone. Explain error bars. Avoid the words 'simple' and 'just'."}
+{"id": 75, "text": "Respond as a short FAQ with 3 questions. Explain like I'm a new employee on day 1. Compare p-values with a related concept. Use British spelling."}
+{"id": 76, "text": "Respond as a JSON object with keys: definition, example. Be extra clear and step-by-step. Explain correlation vs causation. Use American spelling."}
+{"id": 77, "text": "Respond as YAML with keys: topic, key_points, common_mistake. Use a friendly tone. Compare fairness in AI with a related concept. Include one short example in parentheses."}
+{"id": 78, "text": "Respond as CSV with headers: pros, cons. Use a neutral, technical tone. Explain bias in datasets. End with a single question."}
+{"id": 79, "text": "Respond as a Markdown table with columns: plan, time_estimate, resources. Explain like I'm an expert (compact). Compare model overfitting with a related concept. Do not ask questions."}
+{"id": 80, "text": "Respond with a tiny analogy and then a definition. Avoid jargon. Explain regularization. Do not use the word 'very'."}
+{"id": 81, "text": "Respond with 'TL;DR:' then one line, then details. Use a formal tone. Compare cross-validation with a related concept. Include exactly one colon (:) in your response."}
+{"id": 82, "text": "Respond with a headline and three subpoints. Explain like I'm 10. Explain gradient descent. Include one emoji at the end."}
+{"id": 83, "text": "Give two options and a recommendation. Be extremely concise. Compare backpropagation with a related concept. Do not use any emojis."}
+{"id": 84, "text": "Give pros and cons (3 each). Use minimal jargon but define key terms. Explain transformers. Avoid the words 'simple' and 'just'."}
+{"id": 85, "text": "Answer in exactly one sentence. Use a witty tone. Compare attention mechanisms with a related concept. Use British spelling."}
+{"id": 86, "text": "Answer in exactly two sentences. Explain like I'm a new employee on day 1. Explain tokenization. Use American spelling."}
+{"id": 87, "text": "Answer in exactly 5 words. Be extra clear and step-by-step. Compare prompt engineering with a related concept. Include one short example in parentheses."}
+{"id": 88, "text": "Answer in exactly 12 words. Use a friendly tone. Explain retrieval augmented generation. End with a single question."}
+{"id": 89, "text": "Respond with a 3-bullet list. Use a neutral, technical tone. Compare vector databases with a related concept. Do not ask questions."}
+{"id": 90, "text": "Respond with a 5-step numbered plan. Explain like I'm an expert (compact). Explain embeddings. Do not use the word 'very'."}
+{"id": 91, "text": "Respond with a checklist of 7 items. Avoid jargon. Compare semantic search with a related concept. Include exactly one colon (:) in your response."}
+{"id": 92, "text": "Respond as a short FAQ with 3 questions. Use a formal tone. Explain anomaly detection. Include one emoji at the end."}
+{"id": 93, "text": "Respond as a JSON object with keys: question, answer, why_it_matters. Explain like I'm 10. Compare robust PCA with a related concept. Do not use any emojis."}
+{"id": 94, "text": "Respond as YAML with keys: definition, example. Be extremely concise. Explain compressed sensing. Avoid the words 'simple' and 'just'."}
+{"id": 95, "text": "Respond as CSV with headers: topic, key_points, common_mistake. Use minimal jargon but define key terms. Compare matrix completion with a related concept. Use British spelling."}
+{"id": 96, "text": "Respond as a Markdown table with columns: pros, cons. Use a witty tone. Explain sparse recovery. Use American spelling."}
+{"id": 97, "text": "Respond with a tiny analogy and then a definition. Explain like I'm a new employee on day 1. Compare making tea with a related concept. Include one short example in parentheses."}
+{"id": 98, "text": "Respond with 'TL;DR:' then one line, then details. Be extra clear and step-by-step. Explain baking bread. End with a single question."}
+{"id": 99, "text": "Respond with a headline and three subpoints. Use a friendly tone. Compare changing a bike tire with a related concept. Do not ask questions."}
+{"id": 100, "text": "Give two options and a recommendation. Use a neutral, technical tone. Explain plant care for a pothos. Do not use the word 'very'."}
+{"id": 101, "text": "Give pros and cons (3 each). Explain like I'm an expert (compact). Compare organizing a small closet with a related concept. Include exactly one colon (:) in your response."}
+{"id": 102, "text": "Answer in exactly one sentence. Avoid jargon. Explain planning a weekend trip. Include one emoji at the end."}
+{"id": 103, "text": "Answer in exactly two sentences. Use a formal tone. Compare writing a thank-you note with a related concept. Do not use any emojis."}
+{"id": 104, "text": "Answer in exactly 5 words. Explain like I'm 10. Explain setting up a password manager. Avoid the words 'simple' and 'just'."}
+{"id": 105, "text": "Answer in exactly 12 words. Be extremely concise. Compare backing up photos with a related concept. Use British spelling."}
+{"id": 106, "text": "Respond with a 3-bullet list. Use minimal jargon but define key terms. Explain decluttering a desk. Use American spelling."}
+{"id": 107, "text": "Respond with a 5-step numbered plan. Use a witty tone. Compare learning basic Python with a related concept. Include one short example in parentheses."}
+{"id": 108, "text": "Respond with a checklist of 7 items. Explain like I'm a new employee on day 1. Explain learning Spanish basics. End with a single question."}
+{"id": 109, "text": "Respond as a short FAQ with 3 questions. Be extra clear and step-by-step. Compare creating a study schedule with a related concept. Do not ask questions."}
+{"id": 110, "text": "Respond as a JSON object with keys: summary, steps. Use a friendly tone. Explain preparing for a 5k run. Do not use the word 'very'."}
+{"id": 111, "text": "Respond as YAML with keys: question, answer, why_it_matters. Use a neutral, technical tone. Compare improving posture with a related concept. Include exactly one colon (:) in your response."}
+{"id": 112, "text": "Respond as CSV with headers: definition, example. Explain like I'm an expert (compact). Explain reducing screen time. Include one emoji at the end."}
+{"id": 113, "text": "Respond as a Markdown table with columns: topic, key_points, common_mistake. Avoid jargon. Compare email etiquette with a related concept. Do not use any emojis."}
+{"id": 114, "text": "Respond with a tiny analogy and then a definition. Use a formal tone. Explain running effective meetings. Avoid the words 'simple' and 'just'."}
+{"id": 115, "text": "Respond with 'TL;DR:' then one line, then details. Explain like I'm 10. Compare handling feedback at work with a related concept. Use British spelling."}
+{"id": 116, "text": "Respond with a headline and three subpoints. Be extremely concise. Explain prioritizing tasks. Use American spelling."}
+{"id": 117, "text": "Give two options and a recommendation. Use minimal jargon but define key terms. Compare dealing with procrastination with a related concept. Include one short example in parentheses."}
+{"id": 118, "text": "Give pros and cons (3 each). Use a witty tone. Explain staying hydrated. End with a single question."}
+{"id": 119, "text": "Answer in exactly one sentence. Explain like I'm a new employee on day 1. Compare making a grocery list with a related concept. Do not ask questions."}
+{"id": 120, "text": "Answer in exactly two sentences. Be extra clear and step-by-step. Explain saving money on utilities. Do not use the word 'very'."}
+{"id": 121, "text": "Answer in exactly 5 words. Use a friendly tone. Compare reading nutrition labels with a related concept. Include exactly one colon (:) in your response."}
+{"id": 122, "text": "Answer in exactly 12 words. Use a neutral, technical tone. Explain sleeping better. Include one emoji at the end."}
+{"id": 123, "text": "Respond with a 3-bullet list. Explain like I'm an expert (compact). Compare meditating for 5 minutes with a related concept. Do not use any emojis."}
+{"id": 124, "text": "Respond with a 5-step numbered plan. Avoid jargon. Explain journaling. Avoid the words 'simple' and 'just'."}
+{"id": 125, "text": "Respond with a checklist of 7 items. Use a formal tone. Compare machine learning with a related concept. Use British spelling."}
+{"id": 126, "text": "Respond as a short FAQ with 3 questions. Explain like I'm 10. Explain photosynthesis. Use American spelling."}
+{"id": 127, "text": "Respond as a JSON object with keys: concept, analogy, caveat. Be extremely concise. Compare gravity with a related concept. Include one short example in parentheses."}
+{"id": 128, "text": "Respond as YAML with keys: summary, steps. Use minimal jargon but define key terms. Explain inflation. End with a single question."}
+{"id": 129, "text": "Respond as CSV with headers: question, answer, why_it_matters. Use a witty tone. Compare the water cycle with a related concept. Do not ask questions."}
+{"id": 130, "text": "Respond as a Markdown table with columns: definition, example. Explain like I'm a new employee on day 1. Explain a mutex. Do not use the word 'very'."}
+{"id": 131, "text": "Respond with a tiny analogy and then a definition. Be extra clear and step-by-step. Compare unit testing with a related concept. Include exactly one colon (:) in your response."}
+{"id": 132, "text": "Respond with 'TL;DR:' then one line, then details. Use a friendly tone. Explain REST APIs. Include one emoji at the end."}
+{"id": 133, "text": "Respond with a headline and three subpoints. Use a neutral, technical tone. Compare blockchain with a related concept. Do not use any emojis."}
+{"id": 134, "text": "Give two options and a recommendation. Explain like I'm an expert (compact). Explain climate vs weather. Avoid the words 'simple' and 'just'."}
+{"id": 135, "text": "Give pros and cons (3 each). Avoid jargon. Compare compound interest with a related concept. Use British spelling."}
+{"id": 136, "text": "Answer in exactly one sentence. Use a formal tone. Explain the French Revolution. Use American spelling."}
+{"id": 137, "text": "Answer in exactly two sentences. Explain like I'm 10. Compare supply and demand with a related concept. Include one short example in parentheses."}
+{"id": 138, "text": "Answer in exactly 5 words. Be extremely concise. Explain Bayes' theorem. End with a single question."}
+{"id": 139, "text": "Answer in exactly 12 words. Use minimal jargon but define key terms. Compare linear regression with a related concept. Do not ask questions."}
+{"id": 140, "text": "Respond with a 3-bullet list. Use a witty tone. Explain neurons in the brain. Do not use the word 'very'."}
+{"id": 141, "text": "Respond with a 5-step numbered plan. Explain like I'm a new employee on day 1. Compare vitamin D with a related concept. Include exactly one colon (:) in your response."}
+{"id": 142, "text": "Respond with a checklist of 7 items. Be extra clear and step-by-step. Explain sleep hygiene. Include one emoji at the end."}
+{"id": 143, "text": "Respond as a short FAQ with 3 questions. Use a friendly tone. Compare time zones with a related concept. Do not use any emojis."}
+{"id": 144, "text": "Respond as a JSON object with keys: answer. Use a neutral, technical tone. Explain cryptography basics. Avoid the words 'simple' and 'just'."}
+{"id": 145, "text": "Respond as YAML with keys: concept, analogy, caveat. Explain like I'm an expert (compact). Compare data privacy with a related concept. Use British spelling."}
+{"id": 146, "text": "Respond as CSV with headers: summary, steps. Avoid jargon. Explain version control. Use American spelling."}
+{"id": 147, "text": "Respond as a Markdown table with columns: question, answer, why_it_matters. Use a formal tone. Compare debugging with a related concept. Include one short example in parentheses."}
+{"id": 148, "text": "Respond with a tiny analogy and then a definition. Explain like I'm 10. Explain recursion. End with a single question."}
+{"id": 149, "text": "Respond with 'TL;DR:' then one line, then details. Be extremely concise. Compare entropy with a related concept. Do not ask questions."}
+{"id": 150, "text": "Respond with a headline and three subpoints. Use minimal jargon but define key terms. Explain probability. Do not use the word 'very'."}
+{"id": 151, "text": "Give two options and a recommendation. Use a witty tone. Compare electric circuits with a related concept. Include exactly one colon (:) in your response."}
+{"id": 152, "text": "Give pros and cons (3 each). Explain like I'm a new employee on day 1. Explain antibiotic resistance. Include one emoji at the end."}
+{"id": 153, "text": "Answer in exactly one sentence. Be extra clear and step-by-step. Compare vaccines with a related concept. Do not use any emojis."}
+{"id": 154, "text": "Answer in exactly two sentences. Use a friendly tone. Explain astronomy. Avoid the words 'simple' and 'just'."}
+{"id": 155, "text": "Answer in exactly 5 words. Use a neutral, technical tone. Compare black holes with a related concept. Use British spelling."}
+{"id": 156, "text": "Answer in exactly 12 words. Explain like I'm an expert (compact). Explain the Higgs boson. Use American spelling."}
+{"id": 157, "text": "Respond with a 3-bullet list. Avoid jargon. Compare quantum superposition with a related concept. Include one short example in parentheses."}
+{"id": 158, "text": "Respond with a 5-step numbered plan. Use a formal tone. Explain DNA replication. End with a single question."}
+{"id": 159, "text": "Respond with a checklist of 7 items. Explain like I'm 10. Compare natural selection with a related concept. Do not ask questions."}
+{"id": 160, "text": "Respond as a short FAQ with 3 questions. Be extremely concise. Explain renewable energy. Do not use the word 'very'."}
+{"id": 161, "text": "Respond as a JSON object with keys: headline, details. Use minimal jargon but define key terms. Compare battery recycling with a related concept. Include exactly one colon (:) in your response."}
+{"id": 162, "text": "Respond as YAML with keys: answer. Use a witty tone. Explain ocean acidification. Include one emoji at the end."}
+{"id": 163, "text": "Respond as CSV with headers: concept, analogy, caveat. Explain like I'm a new employee on day 1. Compare microplastics with a related concept. Do not use any emojis."}
+{"id": 164, "text": "Respond as a Markdown table with columns: summary, steps. Be extra clear and step-by-step. Explain the Linux filesystem. Avoid the words 'simple' and 'just'."}
+{"id": 165, "text": "Respond with a tiny analogy and then a definition. Use a friendly tone. Compare containerization with a related concept. Use British spelling."}
+{"id": 166, "text": "Respond with 'TL;DR:' then one line, then details. Use a neutral, technical tone. Explain CI/CD pipelines. Use American spelling."}
+{"id": 167, "text": "Respond with a headline and three subpoints. Explain like I'm an expert (compact). Compare database indexes with a related concept. Include one short example in parentheses."}
+{"id": 168, "text": "Give two options and a recommendation. Avoid jargon. Explain SQL joins. End with a single question."}
+{"id": 169, "text": "Give pros and cons (3 each). Use a formal tone. Compare graph algorithms with a related concept. Do not ask questions."}
+{"id": 170, "text": "Answer in exactly one sentence. Explain like I'm 10. Explain Dijkstra's algorithm. Do not use the word 'very'."}
+{"id": 171, "text": "Answer in exactly two sentences. Be extremely concise. Compare hash tables with a related concept. Include exactly one colon (:) in your response."}
+{"id": 172, "text": "Answer in exactly 5 words. Use minimal jargon but define key terms. Explain Big-O notation. Include one emoji at the end."}
+{"id": 173, "text": "Answer in exactly 12 words. Use a witty tone. Compare compression with a related concept. Do not use any emojis."}
+{"id": 174, "text": "Respond with a 3-bullet list. Explain like I'm a new employee on day 1. Explain HTTP status codes. Avoid the words 'simple' and 'just'."}
+{"id": 175, "text": "Respond with a 5-step numbered plan. Be extra clear and step-by-step. Compare OAuth with a related concept. Use British spelling."}
+{"id": 176, "text": "Respond with a checklist of 7 items. Use a friendly tone. Explain public key encryption. Use American spelling."}
+{"id": 177, "text": "Respond as a short FAQ with 3 questions. Use a neutral, technical tone. Compare phishing awareness with a related concept. Include one short example in parentheses."}
+{"id": 178, "text": "Respond as a JSON object with keys: plan, time_estimate, resources. Explain like I'm an expert (compact). Explain budgeting. End with a single question."}
+{"id": 179, "text": "Respond as YAML with keys: headline, details. Avoid jargon. Compare meal prep with a related concept. Do not ask questions."}
+{"id": 180, "text": "Respond as CSV with headers: answer. Use a formal tone. Explain mindfulness. Do not use the word 'very'."}
+{"id": 181, "text": "Respond as a Markdown table with columns: concept, analogy, caveat. Explain like I'm 10. Compare public speaking with a related concept. Include exactly one colon (:) in your response."}
+{"id": 182, "text": "Respond with a tiny analogy and then a definition. Be extremely concise. Explain negotiation. Include one emoji at the end."}
+{"id": 183, "text": "Respond with 'TL;DR:' then one line, then details. Use minimal jargon but define key terms. Compare reading comprehension with a related concept. Do not use any emojis."}
+{"id": 184, "text": "Respond with a headline and three subpoints. Use a witty tone. Explain note-taking. Avoid the words 'simple' and 'just'."}
+{"id": 185, "text": "Give two options and a recommendation. Explain like I'm a new employee on day 1. Compare spaced repetition with a related concept. Use British spelling."}
+{"id": 186, "text": "Give pros and cons (3 each). Be extra clear and step-by-step. Explain goal setting. Use American spelling."}
+{"id": 187, "text": "Answer in exactly one sentence. Use a friendly tone. Compare project planning with a related concept. Include one short example in parentheses."}
+{"id": 188, "text": "Answer in exactly two sentences. Use a neutral, technical tone. Explain risk management. End with a single question."}
+{"id": 189, "text": "Answer in exactly 5 words. Explain like I'm an expert (compact). Compare stakeholder communication with a related concept. Do not ask questions."}
+{"id": 190, "text": "Answer in exactly 12 words. Avoid jargon. Explain customer support. Do not use the word 'very'."}
+{"id": 191, "text": "Respond with a 3-bullet list. Use a formal tone. Compare writing a resume with a related concept. Include exactly one colon (:) in your response."}
+{"id": 192, "text": "Respond with a 5-step numbered plan. Explain like I'm 10. Explain interview preparation. Include one emoji at the end."}
+{"id": 193, "text": "Respond with a checklist of 7 items. Be extremely concise. Compare networking with a related concept. Do not use any emojis."}
+{"id": 194, "text": "Respond as a short FAQ with 3 questions. Use minimal jargon but define key terms. Explain product-market fit. Avoid the words 'simple' and 'just'."}
+{"id": 195, "text": "Respond as a JSON object with keys: pros, cons. Use a witty tone. Compare A/B testing with a related concept. Use British spelling."}
+{"id": 196, "text": "Respond as YAML with keys: plan, time_estimate, resources. Explain like I'm a new employee on day 1. Explain metrics and KPIs. Use American spelling."}
+{"id": 197, "text": "Respond as CSV with headers: headline, details. Be extra clear and step-by-step. Compare data visualization with a related concept. Include one short example in parentheses."}
+{"id": 198, "text": "Respond as a Markdown table with columns: answer. Use a friendly tone. Explain experiment design. End with a single question."}
+{"id": 199, "text": "Respond with a tiny analogy and then a definition. Use a neutral, technical tone. Compare error bars with a related concept. Do not ask questions."}
+{"id": 200, "text": "Respond with 'TL;DR:' then one line, then details. Explain like I'm an expert (compact). Explain p-values. Do not use the word 'very'."}
+{"id": 201, "text": "Respond with a headline and three subpoints. Avoid jargon. Compare correlation vs causation with a related concept. Include exactly one colon (:) in your response."}
+{"id": 202, "text": "Give two options and a recommendation. Use a formal tone. Explain fairness in AI. Include one emoji at the end."}
+{"id": 203, "text": "Give pros and cons (3 each). Explain like I'm 10. Compare bias in datasets with a related concept. Do not use any emojis."}
+{"id": 204, "text": "Answer in exactly one sentence. Be extremely concise. Explain model overfitting. Avoid the words 'simple' and 'just'."}
+{"id": 205, "text": "Answer in exactly two sentences. Use minimal jargon but define key terms. Compare regularization with a related concept. Use British spelling."}
+{"id": 206, "text": "Answer in exactly 5 words. Use a witty tone. Explain cross-validation. Use American spelling."}
+{"id": 207, "text": "Answer in exactly 12 words. Explain like I'm a new employee on day 1. Compare gradient descent with a related concept. Include one short example in parentheses."}
+{"id": 208, "text": "Respond with a 3-bullet list. Be extra clear and step-by-step. Explain backpropagation. End with a single question."}
+{"id": 209, "text": "Respond with a 5-step numbered plan. Use a friendly tone. Compare transformers with a related concept. Do not ask questions."}
+{"id": 210, "text": "Respond with a checklist of 7 items. Use a neutral, technical tone. Explain attention mechanisms. Do not use the word 'very'."}
+{"id": 211, "text": "Respond as a short FAQ with 3 questions. Explain like I'm an expert (compact). Compare tokenization with a related concept. Include exactly one colon (:) in your response."}
+{"id": 212, "text": "Respond as a JSON object with keys: topic, key_points, common_mistake. Avoid jargon. Explain prompt engineering. Include one emoji at the end."}
+{"id": 213, "text": "Respond as YAML with keys: pros, cons. Use a formal tone. Compare retrieval augmented generation with a related concept. Do not use any emojis."}
+{"id": 214, "text": "Respond as CSV with headers: plan, time_estimate, resources. Explain like I'm 10. Explain vector databases. Avoid the words 'simple' and 'just'."}
+{"id": 215, "text": "Respond as a Markdown table with columns: headline, details. Be extremely concise. Compare embeddings with a related concept. Use British spelling."}
+{"id": 216, "text": "Respond with a tiny analogy and then a definition. Use minimal jargon but define key terms. Explain semantic search. Use American spelling."}
+{"id": 217, "text": "Respond with 'TL;DR:' then one line, then details. Use a witty tone. Compare anomaly detection with a related concept. Include one short example in parentheses."}
+{"id": 218, "text": "Respond with a headline and three subpoints. Explain like I'm a new employee on day 1. Explain robust PCA. End with a single question."}
+{"id": 219, "text": "Give two options and a recommendation. Be extra clear and step-by-step. Compare compressed sensing with a related concept. Do not ask questions."}
+{"id": 220, "text": "Give pros and cons (3 each). Use a friendly tone. Explain matrix completion. Do not use the word 'very'."}
+{"id": 221, "text": "Answer in exactly one sentence. Use a neutral, technical tone. Compare sparse recovery with a related concept. Include exactly one colon (:) in your response."}
+{"id": 222, "text": "Answer in exactly two sentences. Explain like I'm an expert (compact). Explain making tea. Include one emoji at the end."}
+{"id": 223, "text": "Answer in exactly 5 words. Avoid jargon. Compare baking bread with a related concept. Do not use any emojis."}
+{"id": 224, "text": "Answer in exactly 12 words. Use a formal tone. Explain changing a bike tire. Avoid the words 'simple' and 'just'."}
+{"id": 225, "text": "Respond with a 3-bullet list. Explain like I'm 10. Compare plant care for a pothos with a related concept. Use British spelling."}
+{"id": 226, "text": "Respond with a 5-step numbered plan. Be extremely concise. Explain organizing a small closet. Use American spelling."}
+{"id": 227, "text": "Respond with a checklist of 7 items. Use minimal jargon but define key terms. Compare planning a weekend trip with a related concept. Include one short example in parentheses."}
+{"id": 228, "text": "Respond as a short FAQ with 3 questions. Use a witty tone. Explain writing a thank-you note. End with a single question."}
+{"id": 229, "text": "Respond as a JSON object with keys: definition, example. Explain like I'm a new employee on day 1. Compare setting up a password manager with a related concept. Do not ask questions."}
+{"id": 230, "text": "Respond as YAML with keys: topic, key_points, common_mistake. Be extra clear and step-by-step. Explain backing up photos. Do not use the word 'very'."}
+{"id": 231, "text": "Respond as CSV with headers: pros, cons. Use a friendly tone. Compare decluttering a desk with a related concept. Include exactly one colon (:) in your response."}
+{"id": 232, "text": "Respond as a Markdown table with columns: plan, time_estimate, resources. Use a neutral, technical tone. Explain learning basic Python. Include one emoji at the end."}
+{"id": 233, "text": "Respond with a tiny analogy and then a definition. Explain like I'm an expert (compact). Compare learning Spanish basics with a related concept. Do not use any emojis."}
+{"id": 234, "text": "Respond with 'TL;DR:' then one line, then details. Avoid jargon. Explain creating a study schedule. Avoid the words 'simple' and 'just'."}
+{"id": 235, "text": "Respond with a headline and three subpoints. Use a formal tone. Compare preparing for a 5k run with a related concept. Use British spelling."}
+{"id": 236, "text": "Give two options and a recommendation. Explain like I'm 10. Explain improving posture. Use American spelling."}
+{"id": 237, "text": "Give pros and cons (3 each). Be extremely concise. Compare reducing screen time with a related concept. Include one short example in parentheses."}
+{"id": 238, "text": "Answer in exactly one sentence. Use minimal jargon but define key terms. Explain email etiquette. End with a single question."}
+{"id": 239, "text": "Answer in exactly two sentences. Use a witty tone. Compare running effective meetings with a related concept. Do not ask questions."}
+{"id": 240, "text": "Answer in exactly 5 words. Explain like I'm a new employee on day 1. Explain handling feedback at work. Do not use the word 'very'."}
+{"id": 241, "text": "Answer in exactly 12 words. Be extra clear and step-by-step. Compare prioritizing tasks with a related concept. Include exactly one colon (:) in your response."}
+{"id": 242, "text": "Respond with a 3-bullet list. Use a friendly tone. Explain dealing with procrastination. Include one emoji at the end."}
+{"id": 243, "text": "Respond with a 5-step numbered plan. Use a neutral, technical tone. Compare staying hydrated with a related concept. Do not use any emojis."}
+{"id": 244, "text": "Respond with a checklist of 7 items. Explain like I'm an expert (compact). Explain making a grocery list. Avoid the words 'simple' and 'just'."}
+{"id": 245, "text": "Respond as a short FAQ with 3 questions. Avoid jargon. Compare saving money on utilities with a related concept. Use British spelling."}
+{"id": 246, "text": "Respond as a JSON object with keys: question, answer, why_it_matters. Use a formal tone. Explain reading nutrition labels. Use American spelling."}
+{"id": 247, "text": "Respond as YAML with keys: definition, example. Explain like I'm 10. Compare sleeping better with a related concept. Include one short example in parentheses."}
+{"id": 248, "text": "Respond as CSV with headers: topic, key_points, common_mistake. Be extremely concise. Explain meditating for 5 minutes. End with a single question."}
+{"id": 249, "text": "Respond as a Markdown table with columns: pros, cons. Use minimal jargon but define key terms. Compare journaling with a related concept. Do not ask questions."}
+{"id": 250, "text": "Respond with a tiny analogy and then a definition. Use a witty tone. Explain machine learning. Do not use the word 'very'."}
+{"id": 251, "text": "Respond with 'TL;DR:' then one line, then details. Explain like I'm a new employee on day 1. Compare photosynthesis with a related concept. Include exactly one colon (:) in your response."}
+{"id": 252, "text": "Respond with a headline and three subpoints. Be extra clear and step-by-step. Explain gravity. Include one emoji at the end."}
+{"id": 253, "text": "Give two options and a recommendation. Use a friendly tone. Compare inflation with a related concept. Do not use any emojis."}
+{"id": 254, "text": "Give pros and cons (3 each). Use a neutral, technical tone. Explain the water cycle. Avoid the words 'simple' and 'just'."}
+{"id": 255, "text": "Answer in exactly one sentence. Explain like I'm an expert (compact). Compare a mutex with a related concept. Use British spelling."}
+{"id": 256, "text": "Answer in exactly two sentences. Avoid jargon. Explain unit testing. Use American spelling."}
+{"id": 257, "text": "Answer in exactly 5 words. Use a formal tone. Compare REST APIs with a related concept. Include one short example in parentheses."}
+{"id": 258, "text": "Answer in exactly 12 words. Explain like I'm 10. Explain blockchain. End with a single question."}
+{"id": 259, "text": "Respond with a 3-bullet list. Be extremely concise. Compare climate vs weather with a related concept. Do not ask questions."}
+{"id": 260, "text": "Respond with a 5-step numbered plan. Use minimal jargon but define key terms. Explain compound interest. Do not use the word 'very'."}
+{"id": 261, "text": "Respond with a checklist of 7 items. Use a witty tone. Compare the French Revolution with a related concept. Include exactly one colon (:) in your response."}
+{"id": 262, "text": "Respond as a short FAQ with 3 questions. Explain like I'm a new employee on day 1. Explain supply and demand. Include one emoji at the end."}
+{"id": 263, "text": "Respond as a JSON object with keys: summary, steps. Be extra clear and step-by-step. Compare Bayes' theorem with a related concept. Do not use any emojis."}
+{"id": 264, "text": "Respond as YAML with keys: question, answer, why_it_matters. Use a friendly tone. Explain linear regression. Avoid the words 'simple' and 'just'."}
+{"id": 265, "text": "Respond as CSV with headers: definition, example. Use a neutral, technical tone. Compare neurons in the brain with a related concept. Use British spelling."}
+{"id": 266, "text": "Respond as a Markdown table with columns: topic, key_points, common_mistake. Explain like I'm an expert (compact). Explain vitamin D. Use American spelling."}
+{"id": 267, "text": "Respond with a tiny analogy and then a definition. Avoid jargon. Compare sleep hygiene with a related concept. Include one short example in parentheses."}
+{"id": 268, "text": "Respond with 'TL;DR:' then one line, then details. Use a formal tone. Explain time zones. End with a single question."}
+{"id": 269, "text": "Respond with a headline and three subpoints. Explain like I'm 10. Compare cryptography basics with a related concept. Do not ask questions."}
+{"id": 270, "text": "Give two options and a recommendation. Be extremely concise. Explain data privacy. Do not use the word 'very'."}
+{"id": 271, "text": "Give pros and cons (3 each). Use minimal jargon but define key terms. Compare version control with a related concept. Include exactly one colon (:) in your response."}
+{"id": 272, "text": "Answer in exactly one sentence. Use a witty tone. Explain debugging. Include one emoji at the end."}
+{"id": 273, "text": "Answer in exactly two sentences. Explain like I'm a new employee on day 1. Compare recursion with a related concept. Do not use any emojis."}
+{"id": 274, "text": "Answer in exactly 5 words. Be extra clear and step-by-step. Explain entropy. Avoid the words 'simple' and 'just'."}
+{"id": 275, "text": "Answer in exactly 12 words. Use a friendly tone. Compare probability with a related concept. Use British spelling."}
+{"id": 276, "text": "Respond with a 3-bullet list. Use a neutral, technical tone. Explain electric circuits. Use American spelling."}
+{"id": 277, "text": "Respond with a 5-step numbered plan. Explain like I'm an expert (compact). Compare antibiotic resistance with a related concept. Include one short example in parentheses."}
+{"id": 278, "text": "Respond with a checklist of 7 items. Avoid jargon. Explain vaccines. End with a single question."}
+{"id": 279, "text": "Respond as a short FAQ with 3 questions. Use a formal tone. Compare astronomy with a related concept. Do not ask questions."}
+{"id": 280, "text": "Respond as a JSON object with keys: concept, analogy, caveat. Explain like I'm 10. Explain black holes. Do not use the word 'very'."}
+{"id": 281, "text": "Respond as YAML with keys: summary, steps. Be extremely concise. Compare the Higgs boson with a related concept. Include exactly one colon (:) in your response."}
+{"id": 282, "text": "Respond as CSV with headers: question, answer, why_it_matters. Use minimal jargon but define key terms. Explain quantum superposition. Include one emoji at the end."}
+{"id": 283, "text": "Respond as a Markdown table with columns: definition, example. Use a witty tone. Compare DNA replication with a related concept. Do not use any emojis."}
+{"id": 284, "text": "Respond with a tiny analogy and then a definition. Explain like I'm a new employee on day 1. Explain natural selection. Avoid the words 'simple' and 'just'."}
+{"id": 285, "text": "Respond with 'TL;DR:' then one line, then details. Be extra clear and step-by-step. Compare renewable energy with a related concept. Use British spelling."}
+{"id": 286, "text": "Respond with a headline and three subpoints. Use a friendly tone. Explain battery recycling. Use American spelling."}
+{"id": 287, "text": "Give two options and a recommendation. Use a neutral, technical tone. Compare ocean acidification with a related concept. Include one short example in parentheses."}
+{"id": 288, "text": "Give pros and cons (3 each). Explain like I'm an expert (compact). Explain microplastics. End with a single question."}
+{"id": 289, "text": "Answer in exactly one sentence. Avoid jargon. Compare the Linux filesystem with a related concept. Do not ask questions."}
+{"id": 290, "text": "Answer in exactly two sentences. Use a formal tone. Explain containerization. Do not use the word 'very'."}
+{"id": 291, "text": "Answer in exactly 5 words. Explain like I'm 10. Compare CI/CD pipelines with a related concept. Include exactly one colon (:) in your response."}
+{"id": 292, "text": "Answer in exactly 12 words. Be extremely concise. Explain database indexes. Include one emoji at the end."}
+{"id": 293, "text": "Respond with a 3-bullet list. Use minimal jargon but define key terms. Compare SQL joins with a related concept. Do not use any emojis."}
+{"id": 294, "text": "Respond with a 5-step numbered plan. Use a witty tone. Explain graph algorithms. Avoid the words 'simple' and 'just'."}
+{"id": 295, "text": "Respond with a checklist of 7 items. Explain like I'm a new employee on day 1. Compare Dijkstra's algorithm with a related concept. Use British spelling."}
+{"id": 296, "text": "Respond as a short FAQ with 3 questions. Be extra clear and step-by-step. Explain hash tables. Use American spelling."}
+{"id": 297, "text": "Respond as a JSON object with keys: answer. Use a friendly tone. Compare Big-O notation with a related concept. Include one short example in parentheses."}
+{"id": 298, "text": "Respond as YAML with keys: concept, analogy, caveat. Use a neutral, technical tone. Explain compression. End with a single question."}
+{"id": 299, "text": "Respond as CSV with headers: summary, steps. Explain like I'm an expert (compact). Compare HTTP status codes with a related concept. Do not ask questions."}
