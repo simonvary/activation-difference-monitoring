@@ -22,7 +22,7 @@ This project aims to monitor difference between two models:
    - a short list of **interpretable features** to intervene on.
 5. **Causally validate** both low-rank and sparse components by intervening on the implicated features and measuring changes in text *and* logit-space behavior.
 
-The goal is to understand activation monitoring and see if the sparse component can act as anomaly detection.
+The goal is to understand activation monitoring and see if the sparse component can act as anomaly detection. Motivated by Anthropic’s post on activation monitoring and anomaly detection, and the unexplored setting of detecting large differences between two related models.
 
 
 ## Files
