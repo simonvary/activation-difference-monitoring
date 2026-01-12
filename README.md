@@ -15,4 +15,3 @@ This notebook is a **self-contained demo** of the core methodology:
 
 4. Pick one anomaly prompt and **intervene** on the top sparse features to causally test their role.
 
-This is designed to be readable (job-application friendly) and tweakable: you can play with **layer**, **rank**, **threshold**, **intervention mode**, and **prompt selection**.
