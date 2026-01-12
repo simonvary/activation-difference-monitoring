@@ -1,6 +1,6 @@
 # Activation anomaly detection via low-rank + sparse decomposition of model differences
 
-This repository contains a compact proof-of-concept for **activation anomaly detection** built on **interpretable latent features** (transcoder / SAE-like features). The core idea is to compare a **base** model and an **instruction-tuned** model on the *same prompts*, decompose their internal activation differences into **low-rank** and **sparse** structure, and then **causally validate** those components via targeted feature interventions.
+This repository contains a compact proof-of-concept done in ~1 day for **activation anomaly detection** built on **interpretable latent features** (transcoder / SAE-like features). The core idea is to compare a **base** model and an **instruction-tuned** model on the *same prompts*, decompose their internal activation differences into **low-rank** and **sparse** structure, and then **causally validate** those components via targeted feature interventions.
 
 > **Models used:** `google/gemma-2-2b` vs `google/gemma-2-2b-it` (open weights)  
 > **Tooling:** `circuit-tracer==0.1.0`  
