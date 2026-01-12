@@ -1,17 +1,79 @@
-# Robust model-difference anomaly detection on transcoder/SAE-like features (Gemma-2-2B)
-This notebook is a **self-contained demo** of the core methodology:
+# Model-divergence activation anomaly detection (Gemma-2-2B) via low-rank + sparse feature decomposition
 
-1. **Collect interpretable feature activations** (transcoder features) for the *same prompts* under two models  
-   - `Gemma-2-2B` (base)  
-   - `Gemma-2-2B-it` (instruction-tuned)
+This repo is a compact prototype of **activation anomaly detection** built on **interpretable latent features** (transcoder/SAE-like). The core idea is to compare a **base** model vs an **instruction-tuned** model on the *same prompts*, compute **feature-activation deltas** Δ, then decompose Δ into:
 
-2. Compute a **model-difference matrix**:
-\[ \Delta = F_{it} - F_{base} \]
+- **Low-rank** structure: shared, global “instruction-tuning drift”
+- **Sparse** structure: prompt-specific “something unusual happened” residuals (anomaly signal)
 
-3. Decompose differences into **low-rank + sparse** components (Robust-PCA style):
-\[ \Delta \approx L + S \]
-- **Low-rank `L`**: shared, correlated shifts (often “global instruction-tuning style”)  
-- **Sparse `S`**: prompt-specific spikes (candidate anomaly signal)
+Finally, the repo demonstrates **causal validation** by intervening directly on the implicated transcoder features and measuring changes in both **text** and **logit-space** diagnostics.
 
-4. Pick one anomaly prompt and **intervene** on the top sparse features to causally test their role.
+> Models used: `google/gemma-2-2b` vs `google/gemma-2-2b-it` (open weights)  
+> Feature slice used in the notebook/pipeline: **layer 25** (configurable)
 
+---
+
+## Why this project (and why it’s relevant to monitoring)
+
+Many practical safety/robustness problems are about **detecting distribution shift / unusual internal computation**, not interpretability “for its own sake.” This prototype treats “weird prompts” as **outliers in model-difference activation space** and uses a structured decomposition to separate:
+- common, systematic differences (low-rank), from
+- rare, prompt-specific differences (sparse).
+
+The sparse component provides:
+1) an **anomaly score** per prompt (‖Sᵢ‖₁) and  
+2) a **short list of interpretable features** (the support of Sᵢ) to trace / intervene on.
+
+---
+
+## TL;DR: What to look at first
+
+- 📓 **Notebook:** `notebooks/Transcoder_Anomaly_Detection_FellowshipReady.ipynb`  
+  End-to-end methodology + single-prompt and multi-prompt intervention evaluation.
+- 🌐 **Qualitative report:** `report_top10.html`  
+  Side-by-side outputs for Baseline vs Low-rank-removed vs Sparse-removed on top prompts.
+- 🧰 **Scripts:** `scripts/`  
+  A reproducible pipeline: prompt set → feature matrices → decomposition → interventions.
+
+---
+
+## Repository layout
+
+
+```
+notebooks/
+Transcoder_Anomaly_Detection_FellowshipReady.ipynb
+
+scripts/
+promptset_v0.py # small safe prompt generator (JSONL)
+collect_feature_matrices.py # collect feature activations for base + IT, build Δ
+lowrank_sparse_anomaly.py # decompose Δ into low-rank + sparse + rank/τ sweeps
+make_case.py # select top anomaly prompt + top sparse features
+intervene.py # single-prompt intervention demo
+batch_intervene_topk.py # multi-prompt quantitative comparison -> CSV
+trace_cli.py # (optional) wrapper for circuit-tracing graphs
+utils.py
+
+outputs/
+step2*/feature_matrices.pt # cached matrices (F_base, F_it, Δ, feature list, prompts, meta)
+step3*/decomp.pt # decomposition (L, S, scores, thresholds, etc.)
+step4*/... # cases, CSVs, graphs
+```
+
+---
+
+## Setup
+
+### Environment
+- Python 3.10+ recommended
+- One GPU strongly recommended (tested on CUDA); CPU may be slow.
+
+### Install dependencies
+You need:
+- `torch`, `numpy`, `pandas`, `tqdm`, `matplotlib`
+- **`circuit-tracer==0.1.0`** (this repo assumes circuit-tracer v0.1.0)
+- HuggingFace model access (Gemma weights)
+
+Example:
+```bash
+pip install torch numpy pandas tqdm matplotlib
+pip install circuit-tracer==0.1.0
+```
