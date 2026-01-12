@@ -1,0 +1,613 @@
+<div class='report-wrap'>
+
+<style>
+.report-wrap { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+.card { border: 1px solid #ddd; border-radius: 10px; padding: 10px 12px; margin: 14px 0; }
+.meta { color: #444; font-size: 13px; margin: 6px 0 10px 0; }
+.grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+.col { border: 1px solid #eee; border-radius: 10px; padding: 8px 10px; }
+.title { font-weight: 650; margin-bottom: 6px; }
+pre { margin: 0; white-space: pre-wrap; word-wrap: break-word; font-size: 12.5px; line-height: 1.35; }
+details summary { cursor: pointer; font-weight: 600; }
+.small { font-size: 12px; color: #555; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 999px; border: 1px solid #ddd; margin-right: 6px; font-size: 12px; }
+</style>
+
+<h3>Top 10 prompts by <code>sp_l1_auc_prediv</code></h3>
+<div class='small'>Hyperparams: TOPN_LR=200, TOPN_SPARSE=50, ALPHA_LR=1.0, BETA_SPARSE=2.0, MAX_NEW_TOKENS=220</div>
+
+<div class="card">
+  <details open>
+    <summary>#1 · prompt_index=290</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 172</span> <span class='badge'>lr_l1_step0: 0.43</span> <span class='badge'>sp_l1_step0: 0.164</span> <span class='badge'>lr_diverge_step: 15</span> <span class='badge'>sp_diverge_step: 16</span> <span class='badge'>lr_l1_auc_prediv: 3.12</span> <span class='badge'>sp_l1_auc_prediv: 3.23</span></div>
+    <div class="small"><b>Prompt</b></div>
+    <pre>Answer in exactly two sentences. Use a formal tone. Explain containerization. Do not use the word &#x27;very&#x27;.</pre>
+  </details>
+  <div style="height:10px"></div>
+  <div class="grid">
+    <div class="col">
+      <div class="title">Baseline</div>
+      <pre>Answer in exactly two sentences. Use a formal tone. Explain containerization. Do not use the word &#x27;very&#x27;.  
+
+Containerization is a method of packaging software and its dependencies into a standardized unit, known as a container. This standardized unit can then be deployed and run consistently across different environments, including development, testing, and production. 
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Low-rank (remove L)</div>
+      <pre>Answer in exactly two sentences. Use a formal tone. Explain containerization. Do not use the word &#x27;very&#x27;.  
+
+Containerization is a method of packaging software and its dependencies into a portable unit that can be executed on any system that supports the container runtime environment. This portability enables seamless deployment across diverse computing environments. 
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Sparse (remove S)</div>
+      <pre>Answer in exactly two sentences. Use a formal tone. Explain containerization. Do not use the word &#x27;very&#x27;.  
+
+Containerization is a method of packaging software and its dependencies into a standardized, portable unit. This unit, known as a container, can be run on any system that supports the underlying operating system. 
+</pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <details open>
+    <summary>#2 · prompt_index=27</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 188</span> <span class='badge'>lr_l1_step0: 0.269</span> <span class='badge'>sp_l1_step0: 0.344</span> <span class='badge'>lr_diverge_step: 4</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 1.51</span> <span class='badge'>sp_l1_auc_prediv: 3.2</span></div>
+    <div class="small"><b>Prompt</b></div>
+    <pre>Respond as CSV with headers: answer. Explain like I&#x27;m 10. Compare antibiotic resistance with a related concept. Include one short example in parentheses.</pre>
+  </details>
+  <div style="height:10px"></div>
+  <div class="grid">
+    <div class="col">
+      <div class="title">Baseline</div>
+      <pre>Respond as CSV with headers: answer. Explain like I&#x27;m 10. Compare antibiotic resistance with a related concept. Include one short example in parentheses. )
+
+**Question:** What is the difference between antibiotic resistance and the ability to fight off a cold?
+
+**Answer:** 
+&quot;Antibiotic resistance is like a superpower that some germs have. It means they can survive even when we use medicine to fight them.  Think of it like this: imagine you have a superhero team fighting a villain. The villain is a germ, and the superheroes are antibiotics. But some villains have special powers that make them immune to the superhero&#x27;s attacks. That&#x27;s antibiotic resistance.
+
+On the other hand, fighting off a cold is like having a normal immune system. It&#x27;s like your body&#x27;s own superhero team that can fight off the cold virus.  It&#x27;s not a superpower, it&#x27;s just your body&#x27;s natural defense system.&quot;
+
+**Explanation:**
+
+* **Antibiotic resistance:**  Some germs, like bacteria, can become resistant to antibiotics. This means they can survive even when we use medicine to fight them. It&#x27;s like a superpower that makes them tough to kill.
+* **Fighting off a</pre>
+    </div>
+    <div class="col">
+      <div class="title">Low-rank (remove L)</div>
+      <pre>Respond as CSV with headers: answer. Explain like I&#x27;m 10. Compare antibiotic resistance with a related concept. Include one short example in parentheses. )
+
+## Antibiotic Resistance
+
+**Answer:** 
+
+Antibiotic resistance is like a game of hide and seek with germs (bacteria). 
+
+**Explanation:**
+
+Imagine a germ is a sneaky little monster hiding in your body. Antibiotics are like special tools that help us find and zap the monster (kill it). 
+
+But sometimes, the monster gets smart and learns to hide better! It changes its hiding spot (becomes resistant to the antibiotic). Now the tool (antibiotic) can&#x27;t find it anymore and the monster is still alive and well (continues to cause problems).
+
+**Example:**
+
+Imagine a germ that loves to hide in a fort (inside a cell). If we use a tool (antibiotic) that can only open a certain door (target), the germ can hide in a different part of the fort (another hiding spot).
+
+**Related Concept:**
+
+**Evolution**
+
+Just like the monster in the game of hide and seek, germs can also evolve and change over time (like a chameleon). 
+
+**Explanation:**
+
+Evolution is like a slow but</pre>
+    </div>
+    <div class="col">
+      <div class="title">Sparse (remove S)</div>
+      <pre>Respond as CSV with headers: answer. Explain like I&#x27;m 10. Compare antibiotic resistance with a related concept. Include one short example in parentheses. )
+
+**Question:** What is the difference between antibiotic resistance and the ability to fight off a cold?
+
+**Answer:**
+answer,Explanation
+-------,-------
+Antibiotic resistance is like a superpower that some germs have. It means they can survive even when you take an antibiotic to fight them.  
+A cold is like a regular sickness that your body can fight off on its own. It&#x27;s like a tiny army of your body cells that work together to get rid of the bad stuff that makes you sick.
+
+**Example:**
+(Imagine a tiny army of your body cells fighting off a cold virus. The virus is like a bad germ that wants to make you sick.)
+
+**Explanation:**
+Antibiotic resistance is a problem because it makes it harder to treat infections. It&#x27;s like if your body&#x27;s army couldn&#x27;t fight off the bad germs anymore. 
+ 
+**Example:**
+(If your body&#x27;s army couldn&#x27;t fight off the bad germs anymore, you would need stronger medicine to help it.)
+
+
+</pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <details open>
+    <summary>#3 · prompt_index=52</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 50.1</span> <span class='badge'>lr_l1_step0: 1.61</span> <span class='badge'>sp_l1_step0: 0.116</span> <span class='badge'>lr_diverge_step: 0</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 0</span> <span class='badge'>sp_l1_auc_prediv: 2.88</span></div>
+    <div class="small"><b>Prompt</b></div>
+    <pre>Answer in exactly two sentences. Use a witty tone. Explain phishing awareness. Include one emoji at the end.</pre>
+  </details>
+  <div style="height:10px"></div>
+  <div class="grid">
+    <div class="col">
+      <div class="title">Baseline</div>
+      <pre>Answer in exactly two sentences. Use a witty tone. Explain phishing awareness. Include one emoji at the end. 🤯
+
+Phishing awareness is like knowing your enemy&#x27;s secret handshake.  You&#x27;ll spot the red flags and avoid getting tricked by those sneaky emails and websites. 
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Low-rank (remove L)</div>
+      <pre>Answer in exactly two sentences. Use a witty tone. Explain phishing awareness. Include one emoji at the end. 🤔
+
+Phishing is like a bad magician trying to pull a rabbit out of a hat – it pretends to be something it&#x27;s not to trick you into giving away your secrets 🤫 
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Sparse (remove S)</div>
+      <pre>Answer in exactly two sentences. Use a witty tone. Explain phishing awareness. Include one emoji at the end. 🤯
+
+Phishing awareness is like knowing your enemy&#x27;s secret handshake.  You&#x27;ll spot the fake emails and calls a mile away, and your inbox will thank you for it. 
+</pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <details open>
+    <summary>#4 · prompt_index=8</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 163</span> <span class='badge'>lr_l1_step0: 0.377</span> <span class='badge'>sp_l1_step0: 1.14</span> <span class='badge'>lr_diverge_step: 15</span> <span class='badge'>sp_diverge_step: 19</span> <span class='badge'>lr_l1_auc_prediv: 2.35</span> <span class='badge'>sp_l1_auc_prediv: 2.81</span></div>
+    <div class="small"><b>Prompt</b></div>
+    <pre>Respond as a JSON object with keys: headline, details. Use a witty tone. Explain blockchain. End with a single question.</pre>
+  </details>
+  <div style="height:10px"></div>
+  <div class="grid">
+    <div class="col">
+      <div class="title">Baseline</div>
+      <pre>Respond as a JSON object with keys: headline, details. Use a witty tone. Explain blockchain. End with a single question.
+
+```json
+{
+  &quot;headline&quot;: &quot;Blockchain: Not Just for Bitcoin Anymore&quot;,
+  &quot;details&quot;: &quot;Blockchain is like a digital ledger that keeps track of all the transactions in a secure and transparent way. Think of it as a giant spreadsheet, but instead of being stored in one place, it&#x27;s spread across a network of computers. This makes it incredibly difficult to tamper with, which is why it&#x27;s so popular for things like cryptocurrencies and supply chain management.  It&#x27;s like a digital version of the old-fashioned &#x27;trust no one&#x27; mentality, but with way more tech involved.  So, while Bitcoin might be the most famous, blockchain is a powerful tool with a lot of potential beyond just digital gold.  But hey, if you&#x27;re still confused, just remember: it&#x27;s like a giant, digital, and very secure, shared spreadsheet.  What&#x27;s the most interesting thing you think blockchain could do in the future?&quot;
+}
+``` 
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Low-rank (remove L)</div>
+      <pre>Respond as a JSON object with keys: headline, details. Use a witty tone. Explain blockchain. End with a single question.
+
+```json
+{
+  &quot;headline&quot;: &quot;Blockchain: Not Just Bitcoin&#x27;s Cousin Anymore&quot;,
+  &quot;details&quot;: &quot;Blockchain technology is like a digital ledger that&#x27;s super secure and transparent. Think of it as a giant spreadsheet shared across a bunch of computers, but instead of just numbers, it stores all sorts of data – from financial transactions to voting records.  It&#x27;s a bit like a digital version of a high school yearbook, but instead of gossip and embarrassing photos, it&#x27;s all about trust and security.  
+
+  The beauty of blockchain lies in its immutability – once a transaction is recorded on the blockchain, it&#x27;s practically impossible to tamper with.  It&#x27;s like a digital fingerprint that&#x27;s hard to erase.  
+
+  So, while Bitcoin is the most famous blockchain application, it&#x27;s just the tip of the iceberg. Blockchain technology has the potential to revolutionize industries from healthcare to supply chain management, and even voting systems.  
+
+  But hey, before you start dreaming of a world without pesky paper trails, remember</pre>
+    </div>
+    <div class="col">
+      <div class="title">Sparse (remove S)</div>
+      <pre>Respond as a JSON object with keys: headline, details. Use a witty tone. Explain blockchain. End with a single question.
+
+```json
+{
+  &quot;headline&quot;: &quot;Blockchain: Not Just for Bitcoin Anymore (and it&#x27;s way less scary than you think)&quot;,
+  &quot;details&quot;: &quot;
+
+  Imagine a digital ledger that&#x27;s shared across a network of computers, constantly updated and verified by everyone involved. That&#x27;s the basic idea behind blockchain.
+
+  It&#x27;s like a giant spreadsheet that records every transaction ever made on a network, but instead of being stored in one place, it&#x27;s spread out across the network. This makes it incredibly difficult to tamper with or hack because any change would require changing the information on every single computer in the network.
+
+  Think of it like a digital version of the &quot;trust but verify&quot; principle. Everyone has a copy of the ledger, so if someone tries to cheat, everyone else will know and can block the transaction.
+
+  Blockchain is not just for cryptocurrencies like Bitcoin anymore. It has the potential to revolutionize many industries, from supply chain management to voting systems to healthcare records.
+
+  So, while it might seem like a</pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <details open>
+    <summary>#5 · prompt_index=207</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 198</span> <span class='badge'>lr_l1_step0: 0.413</span> <span class='badge'>sp_l1_step0: 0.205</span> <span class='badge'>lr_diverge_step: 6</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 1.41</span> <span class='badge'>sp_l1_auc_prediv: 2.53</span></div>
+    <div class="small"><b>Prompt</b></div>
+    <pre>Answer in exactly 12 words. Explain like I&#x27;m a new employee on day 1. Compare gradient descent with a related concept. Include one short example in parentheses.</pre>
+  </details>
+  <div style="height:10px"></div>
+  <div class="grid">
+    <div class="col">
+      <div class="title">Baseline</div>
+      <pre>Answer in exactly 12 words. Explain like I&#x27;m a new employee on day 1. Compare gradient descent with a related concept. Include one short example in parentheses. )
+
+Gradient descent is like finding the lowest point in a valley, but with a map. 
+
+**Explanation:**
+
+Gradient descent is an optimization algorithm that iteratively updates parameters to minimize a loss function. It works by taking steps in the direction of the negative gradient of the loss function. 
+
+Think of it like navigating a valley. You want to find the lowest point, right?  Gradient descent is like walking downhill, but instead of just walking, it uses a map to guide you. The map is the loss function, and the direction of the steps is the gradient. 
+
+**Example:**
+
+Imagine you&#x27;re trying to find the best settings for a camera to take the sharpest picture. The loss function is the difference between the actual picture and the ideal picture. Gradient descent would help you find the settings that minimize this difference. 
+
+
+Let me know if you have any other questions. 
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Low-rank (remove L)</div>
+      <pre>Answer in exactly 12 words. Explain like I&#x27;m a new employee on day 1. Compare gradient descent with a related concept. Include one short example in parentheses. )
+
+Gradient descent is like a hill climber but with a learning rate (a speed). 
+
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Sparse (remove S)</div>
+      <pre>Answer in exactly 12 words. Explain like I&#x27;m a new employee on day 1. Compare gradient descent with a related concept. Include one short example in parentheses. )
+
+Gradient descent is like finding the lowest point in a valley, but with a map. 
+
+**Explanation:**
+
+* **Gradient descent** is an optimization algorithm that iteratively updates parameters to minimize a loss function. 
+* **&quot;Finding the lowest point in a valley&quot;** is a metaphor for finding the optimal parameters.
+* **&quot;With a map&quot;** refers to the use of gradients to guide the search.
+
+**Example:**
+
+* Imagine you&#x27;re trying to find the lowest point in a valley. You have a map showing the terrain. Gradient descent would be like walking downhill, following the steepest descent path indicated by the map. 
+
+
+**Related Concept:**
+
+* **Newton&#x27;s method** is a more sophisticated approach that uses the Hessian matrix to find the minimum. 
+</pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <details open>
+    <summary>#6 · prompt_index=202</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 48.7</span> <span class='badge'>lr_l1_step0: 1.58</span> <span class='badge'>sp_l1_step0: 0.0785</span> <span class='badge'>lr_diverge_step: 0</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 0</span> <span class='badge'>sp_l1_auc_prediv: 2.51</span></div>
+    <div class="small"><b>Prompt</b></div>
+    <pre>Give two options and a recommendation. Use a formal tone. Explain fairness in AI. Include one emoji at the end.</pre>
+  </details>
+  <div style="height:10px"></div>
+  <div class="grid">
+    <div class="col">
+      <div class="title">Baseline</div>
+      <pre>Give two options and a recommendation. Use a formal tone. Explain fairness in AI. Include one emoji at the end.🤖
+
+##  AI Model Selection: Two Options and a Recommendation
+
+Choosing the appropriate AI model for a specific task is crucial for achieving desired outcomes. This decision involves considering various factors, including the nature of the data, the complexity of the problem, and the desired level of accuracy. 
+
+Here are two options for AI model selection:
+
+**Option 1:**  Utilizing a pre-trained deep learning model like BERT or GPT-3.
+
+**Option 2:**  Developing a custom-trained model from scratch.
+
+**Recommendation:**
+
+While both options offer distinct advantages, **Option 2: Developing a custom-trained model from scratch** is generally recommended for tasks requiring high accuracy and specific domain expertise. 
+
+**Explanation:**
+
+* **Fairness in AI:**  Fairness in AI refers to the ethical principle of ensuring that AI systems do not perpetuate or amplify existing societal biases. This is particularly important in applications like hiring, loan approvals, and criminal justice, where biased algorithms can lead to discriminatory outcomes. 
+* **Custom-trained Models:**  Developing a</pre>
+    </div>
+    <div class="col">
+      <div class="title">Low-rank (remove L)</div>
+      <pre>Give two options and a recommendation. Use a formal tone. Explain fairness in AI. Include one emoji at the end. 🤔
+
+##  AI Model Selection for a Project 
+
+When selecting an AI model for a project, it is crucial to consider various factors to ensure optimal performance and ethical considerations. 
+
+**Option 1:** 
+Utilize a pre-trained model from a reputable platform like TensorFlow Hub or PyTorch Hub. 
+
+**Option 2:** 
+Develop a custom AI model from scratch using a deep learning framework like TensorFlow or PyTorch.
+
+**Recommendation:**
+
+While both options present viable solutions, **Option 2** is generally recommended for projects requiring high customization and control over the model&#x27;s architecture and training data. 
+
+**Fairness in AI**
+
+Fairness in AI refers to the principle of ensuring that AI systems do not perpetuate or amplify existing societal biases and inequalities. This involves designing and deploying AI models that are **equitable** and **non-discriminatory**. 
+
+**Considerations for Fairness:**
+
+1. **Data Bias:**  The training data used to develop the AI model must be representative of the real world and free from biases that could lead to</pre>
+    </div>
+    <div class="col">
+      <div class="title">Sparse (remove S)</div>
+      <pre>Give two options and a recommendation. Use a formal tone. Explain fairness in AI. Include one emoji at the end.🤖
+
+##  AI Model Selection: Two Options and a Recommendation
+
+Choosing the appropriate AI model for a specific task is crucial for achieving desired outcomes. This decision involves a careful consideration of various factors, including the nature of the data, the complexity of the problem, and the desired level of accuracy. 
+
+Here are two options for AI model selection:
+
+**Option 1:**  Utilizing a pre-trained deep learning model like BERT or GPT-3.
+
+**Option 2:**  Developing a custom-trained model from scratch.
+
+**Recommendation:**
+
+While both options offer distinct advantages, **Option 2, developing a custom-trained model, is generally recommended for tasks requiring high accuracy and specific domain expertise.** 
+
+**Explanation:**
+
+* **Fairness in AI:**  Fairness in AI refers to the ethical principle of ensuring that AI systems do not perpetuate or amplify existing societal biases. This is particularly important in applications like hiring, loan approvals, and criminal justice, where biased algorithms can lead to discriminatory outcomes. 
+* **Custom-trained Models:**  Custom</pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <details open>
+    <summary>#7 · prompt_index=252</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 38.5</span> <span class='badge'>lr_l1_step0: 1.59</span> <span class='badge'>sp_l1_step0: 0.0857</span> <span class='badge'>lr_diverge_step: 0</span> <span class='badge'>sp_diverge_step: 15</span> <span class='badge'>lr_l1_auc_prediv: 0</span> <span class='badge'>sp_l1_auc_prediv: 2.23</span></div>
+    <div class="small"><b>Prompt</b></div>
+    <pre>Respond with a headline and three subpoints. Be extra clear and step-by-step. Explain gravity. Include one emoji at the end.</pre>
+  </details>
+  <div style="height:10px"></div>
+  <div class="grid">
+    <div class="col">
+      <div class="title">Baseline</div>
+      <pre>Respond with a headline and three subpoints. Be extra clear and step-by-step. Explain gravity. Include one emoji at the end.🧠
+
+##  The Force That Holds Us Down: Understanding Gravity 
+
+Gravity is a fundamental force of nature that attracts any two objects with mass.  It&#x27;s what keeps us grounded on Earth and what governs the motion of planets and stars.  Here&#x27;s a breakdown of how it works:
+
+* **Mass Matters:** The more massive an object, the stronger its gravitational pull.  Think of the Earth – it&#x27;s much more massive than a ball, so it has a much stronger gravitational pull.
+* **Distance is Key:** The force of gravity weakens as the distance between objects increases.  This is why we don&#x27;t feel the pull of the Sun as strongly as we feel the pull of the Earth.
+* **Universal Attraction:** Gravity acts on all objects in the universe, regardless of their size or composition.  This means that every object, from the smallest atom to the largest galaxy, is subject to the force of gravity. 
+
+ 🧠 
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Low-rank (remove L)</div>
+      <pre>Respond with a headline and three subpoints. Be extra clear and step-by-step. Explain gravity. Include one emoji at the end. 🚀
+
+##  The Invisible Force That Holds Us Together 
+
+Gravity is a fundamental force of nature that attracts any two objects with mass or energy. It is the reason we stay on Earth and the moon orbits around the Earth 🌎 
+
+Here&#x27;s a breakdown of how gravity works:
+
+1. **Mass Matters:** The more massive an object is, the stronger its gravitational pull. This is why the Earth has a stronger gravitational pull than a tennis ball because it has more mass. 
+2. **Distance Determines Strength:** The force of gravity weakens as the distance between two objects increases. This is why astronauts in space don&#x27;t fall to the ground – they are far away from the Earth and the Earth&#x27;s gravitational pull is weaker on them. 
+3. **Universal Attraction:** Gravity is a universal force that affects everything in the universe – from the smallest particles to the largest galaxies. It is a fundamental force of nature that governs the motion of celestial bodies and the formation of stars and planets 🚀 
+
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Sparse (remove S)</div>
+      <pre>Respond with a headline and three subpoints. Be extra clear and step-by-step. Explain gravity. Include one emoji at the end.🧠
+
+##  The Force That Holds Us Down: Understanding Gravity
+
+**1.**  **What is Gravity?** Gravity is a fundamental force of nature that attracts any two objects with mass. The more massive an object, the stronger its gravitational pull.
+
+**2.** **The Equation of Gravity:**  Newton&#x27;s Law of Universal Gravitation describes the force of gravity between two objects. It states that the force (F) is directly proportional to the product of their masses (m1 and m2) and inversely proportional to the square of the distance (r) between their centers.
+
+**3.** **Everyday Examples:** Gravity is responsible for keeping us grounded on Earth. It also governs the motion of planets around the Sun, the tides in the oceans, and the formation of stars and galaxies.
+
+🧠 
+</pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <details open>
+    <summary>#8 · prompt_index=133</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 157</span> <span class='badge'>lr_l1_step0: 0.148</span> <span class='badge'>sp_l1_step0: 0.605</span> <span class='badge'>lr_diverge_step: 4</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 1.1</span> <span class='badge'>sp_l1_auc_prediv: 2.08</span></div>
+    <div class="small"><b>Prompt</b></div>
+    <pre>Respond with a headline and three subpoints. Use a neutral, technical tone. Compare blockchain with a related concept. Do not use any emojis.</pre>
+  </details>
+  <div style="height:10px"></div>
+  <div class="grid">
+    <div class="col">
+      <div class="title">Baseline</div>
+      <pre>Respond with a headline and three subpoints. Use a neutral, technical tone. Compare blockchain with a related concept. Do not use any emojis.
+
+## Blockchain vs. Distributed Ledger Technology
+
+Blockchain technology is often discussed in the context of cryptocurrencies, but it is not the only application of this concept. Distributed Ledger Technology (DLT) encompasses a broader range of systems that share data across multiple nodes. This comparison explores the key differences between blockchain and DLT.
+
+**1. Consensus Mechanism:** Blockchain utilizes a Proof-of-Work (PoW) consensus mechanism, which requires miners to solve complex mathematical problems to validate transactions. DLT systems can employ various consensus mechanisms, including Proof-of-Stake (PoS), Byzantine Fault Tolerance (BFT), and delegated proof-of-stake (DPoS).
+
+**2. Immutability:** Blockchain is known for its immutability, meaning that once a transaction is recorded on the blockchain, it cannot be altered or deleted. DLT systems can also be designed to be immutable, but the level of immutability varies depending on the specific implementation.
+
+**3. Transparency:** Blockchain is inherently transparent, as all transactions are publicly viewable on the blockchain. DLT systems can</pre>
+    </div>
+    <div class="col">
+      <div class="title">Low-rank (remove L)</div>
+      <pre>Respond with a headline and three subpoints. Use a neutral, technical tone. Compare blockchain with a related concept. Do not use any emojis.
+
+## Blockchain vs Distributed Ledger Technology
+
+Blockchain and Distributed Ledger Technology (DLT) are closely related concepts. While blockchain is a specific type of DLT, it possesses unique characteristics that distinguish it from other DLT implementations. 
+
+1. **Immutability:** Blockchain is known for its immutability, a property that ensures the permanent and unalterable nature of data stored on the blockchain. This immutability stems from the cryptographic hash functions used to link blocks together and the consensus mechanism employed to validate transactions. 
+2. **Transparency:** Blockchain transactions are publicly auditable and transparent due to the decentralized nature of the network and the public ledger that records all transactions. This transparency fosters trust and accountability among participants. 
+3. **Decentralization:** Blockchain operates on a decentralized network of nodes that collectively maintain and validate the blockchain ledger. This decentralized architecture mitigates single points of failure and enhances resilience against attacks or manipulation. 
+
+
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Sparse (remove S)</div>
+      <pre>Respond with a headline and three subpoints. Use a neutral, technical tone. Compare blockchain with a related concept. Do not use any emojis.
+
+## Blockchain vs. Distributed Ledger Technology
+
+Blockchain technology is often discussed in the context of cryptocurrencies, but it is not the only application of this concept. Distributed Ledger Technology (DLT) encompasses a broader range of systems that share data across multiple nodes. This comparison explores the key differences between blockchain and DLT.
+
+* **Consensus Mechanism:** Blockchain utilizes a consensus mechanism, such as Proof-of-Work or Proof-of-Stake, to ensure data integrity and prevent tampering. DLT systems may employ various consensus mechanisms, including Byzantine Fault Tolerance, but they are not always required.
+* **Immutability:** Blockchain is known for its immutability, meaning that once data is recorded, it cannot be altered. DLT systems can vary in their level of immutability, with some allowing for modifications under specific conditions.
+* **Transparency:** Blockchain is inherently transparent, as all transactions are publicly viewable on the blockchain. DLT systems can vary in their level of transparency, with some providing limited or controlled access to data.
+
+
+</pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <details open>
+    <summary>#9 · prompt_index=262</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 40.1</span> <span class='badge'>lr_l1_step0: 1.64</span> <span class='badge'>sp_l1_step0: 0.163</span> <span class='badge'>lr_diverge_step: 0</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 0</span> <span class='badge'>sp_l1_auc_prediv: 2.06</span></div>
+    <div class="small"><b>Prompt</b></div>
+    <pre>Respond as a short FAQ with 3 questions. Explain like I&#x27;m a new employee on day 1. Explain supply and demand. Include one emoji at the end.</pre>
+  </details>
+  <div style="height:10px"></div>
+  <div class="grid">
+    <div class="col">
+      <div class="title">Baseline</div>
+      <pre>Respond as a short FAQ with 3 questions. Explain like I&#x27;m a new employee on day 1. Explain supply and demand. Include one emoji at the end.🧠
+
+**Q1: What is supply and demand?**
+
+**A:**  Think of it like this:  
+* **Supply** is how much of something is available.  Imagine a bakery making cookies. The more cookies they bake, the higher the supply. 🍪
+* **Demand** is how much people want that thing. If everyone in town is craving cookies, the demand is high. 
+
+**Q2: How do supply and demand affect prices?**
+
+**A:**  When supply is high and demand is low, prices go down.  Think of it like a sale!  But when supply is low and demand is high, prices go up.  That&#x27;s like a limited edition item everyone wants. 
+
+**Q3: How does this relate to my job?**
+
+**A:**  Understanding supply and demand helps you understand how our company makes decisions about pricing, production, and even what products we offer.  It&#x27;s a key part of running a successful business! 
+
+ 
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Low-rank (remove L)</div>
+      <pre>Respond as a short FAQ with 3 questions. Explain like I&#x27;m a new employee on day 1. Explain supply and demand. Include one emoji at the end. 😊
+
+**Q1: What is supply and demand in a nutshell?**
+
+A1: Imagine a big pizza party 🎉  The more people want pizza (demand), the higher the price might go (because everyone wants it!). But if there&#x27;s a lot of pizza (supply), the price might go down (because there&#x27;s plenty to go around).
+
+**Q2: How does supply and demand affect our work here?**
+
+A2:  We need to understand how much of a product or service people want (demand) and how much we can provide (supply). If demand is high and supply is low, we might need to work extra hard to meet everyone&#x27;s needs. If demand is low and supply is high, we might have some extra time to focus on other things 😊
+
+**Q3: What does it mean for a company to &quot;meet the demand&quot;?**
+
+A3:  It means providing the right amount of products or services to satisfy the customers who want them.  It&#x27;s about finding the sweet spot between having enough to go</pre>
+    </div>
+    <div class="col">
+      <div class="title">Sparse (remove S)</div>
+      <pre>Respond as a short FAQ with 3 questions. Explain like I&#x27;m a new employee on day 1. Explain supply and demand. Include one emoji at the end.🧠
+
+**Q1: What is supply and demand?**
+
+**A:**  Think of it like this:  
+* **Supply** is how much of something is available.  Imagine a bakery making cookies. The more cookies they bake, the higher the supply. 🍪
+* **Demand** is how much people want that thing. If everyone in town is craving cookies, the demand is high. 
+
+**Q2: How do supply and demand affect prices?**
+
+**A:**  When supply is high and demand is low, prices go down.  Think of it like a sale! 🛍️  
+When supply is low and demand is high, prices go up.  This is like a limited edition item everyone wants. 
+
+**Q3: How do supply and demand work together?**
+
+**A:**  Supply and demand are always in a constant dance.  When one goes up, the other has to adjust.  If the bakery makes more cookies, the demand might go down, and the price might go down.  
+
+**</pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <details open>
+    <summary>#10 · prompt_index=81</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 44.6</span> <span class='badge'>lr_l1_step0: 0.32</span> <span class='badge'>sp_l1_step0: 0.0541</span> <span class='badge'>lr_diverge_step: 7</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 2.24</span> <span class='badge'>sp_l1_auc_prediv: 2.05</span></div>
+    <div class="small"><b>Prompt</b></div>
+    <pre>Respond with &#x27;TL;DR:&#x27; then one line, then details. Use a formal tone. Compare cross-validation with a related concept. Include exactly one colon (:) in your response.</pre>
+  </details>
+  <div style="height:10px"></div>
+  <div class="grid">
+    <div class="col">
+      <div class="title">Baseline</div>
+      <pre>Respond with &#x27;TL;DR:&#x27; then one line, then details. Use a formal tone. Compare cross-validation with a related concept. Include exactly one colon (:) in your response.
+
+Cross-validation is a technique used to evaluate the performance of a machine learning model. It is similar to bootstrapping in that both techniques involve resampling the data to create multiple subsets. However, cross-validation differs in its approach to splitting the data and its use of a hold-out set.
+
+TL;DR: Cross-validation is similar to bootstrapping in that both techniques involve resampling the data, but differs in its approach to splitting the data and its use of a hold-out set.
+
+Details: 
+Bootstrapping involves creating multiple samples from the original dataset by randomly sampling with replacement. This process allows for the creation of multiple subsets of the data, each with a different sample of the original data. Cross-validation, on the other hand, involves partitioning the original dataset into k folds. Each fold is then used as a hold-out set for training the model, with the remaining k-1 folds used for validation. This process ensures that the model is evaluated on unseen data and prevents overfitting. 
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Low-rank (remove L)</div>
+      <pre>Respond with &#x27;TL;DR:&#x27; then one line, then details. Use a formal tone. Compare cross-validation with a related concept. Include exactly one colon (:) in your response.
+
+Cross-validation is a technique for evaluating the performance of a machine learning model by partitioning the dataset into multiple folds and iteratively training and evaluating the model on different subsets of the data. This process helps to mitigate overfitting and provides a more robust estimate of the model&#x27;s performance on unseen data. 
+
+A related concept is k-fold cross-validation which is a specific type of cross-validation that uses k folds of the dataset for training and testing the model. 
+
+TL;DR: K-fold cross-validation is a specific type of cross-validation that uses k folds of the dataset for training and testing the model :  It is a subset of cross-validation that utilizes a fixed number of folds (k). 
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Sparse (remove S)</div>
+      <pre>Respond with &#x27;TL;DR:&#x27; then one line, then details. Use a formal tone. Compare cross-validation with a related concept. Include exactly one colon (:) in your response.
+
+Cross-validation is a technique used to evaluate the performance of a machine learning model. It is similar to bootstrapping in that both techniques involve resampling the data to create multiple subsets of the original dataset. However, cross-validation differs in its approach to splitting the data and its use of a holdout set for evaluation.
+
+TL;DR: Cross-validation is similar to bootstrapping in that both techniques involve resampling the data, but differs in its approach to splitting the data and its use of a holdout set for evaluation.
+
+**Details:**
+
+Bootstrapping involves creating multiple samples from the original dataset by randomly sampling with replacement. This process allows for the creation of multiple subsets of the original dataset, each with a different sample of the data. Cross-validation, on the other hand, involves partitioning the original dataset into multiple folds. Each fold is then used as a holdout set for evaluating the model&#x27;s performance on unseen data.
+
+The holdout set is a portion of the data that is not used for training the model during the training process. It is used</pre>
+    </div>
+  </div>
+</div>
+
+</div>

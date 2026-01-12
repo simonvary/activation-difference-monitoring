@@ -1,79 +1,87 @@
-# Model-divergence activation anomaly detection (Gemma-2-2B) via low-rank + sparse feature decomposition
+# Model-divergence activation anomaly detection via low-rank + sparse feature decomposition
 
-This repo is a compact prototype of **activation anomaly detection** built on **interpretable latent features** (transcoder/SAE-like). The core idea is to compare a **base** model vs an **instruction-tuned** model on the *same prompts*, compute **feature-activation deltas** Δ, then decompose Δ into:
+This repository contains a compact proof-of-concept for **activation anomaly detection** built on **interpretable latent features** (transcoder / SAE-like features). The core idea is to compare a **base** model and an **instruction-tuned** model on the *same prompts*, decompose their internal activation differences into **low-rank** and **sparse** structure, and then **causally validate** those components via targeted feature interventions.
 
-- **Low-rank** structure: shared, global “instruction-tuning drift”
-- **Sparse** structure: prompt-specific “something unusual happened” residuals (anomaly signal)
+> **Models used:** `google/gemma-2-2b` vs `google/gemma-2-2b-it` (open weights)  
+> **Tooling:** `circuit-tracer==0.1.0`  
+> **Feature slice (default):** layer 25 (configurable)
 
-Finally, the repo demonstrates **causal validation** by intervening directly on the implicated transcoder features and measuring changes in both **text** and **logit-space** diagnostics.
+The repo is to learn interpretability workflow: detecting *when* internal computation is unusual, localizing *which features* are responsible, and validating that signal with controlled interventions.
 
-> Models used: `google/gemma-2-2b` vs `google/gemma-2-2b-it` (open weights)  
-> Feature slice used in the notebook/pipeline: **layer 25** (configurable)
+## Why this project
 
----
+This project aims to monitor difference between two models:
 
-## Why this project (and why it’s relevant to monitoring)
+1. Run the same prompt through two closely related models (base vs instruction-tuned).
+2. Compute **feature-level activation deltas** \(\Delta = F_{IT} - F_{base}\).
+3. Decompose \(\Delta\) into:
+   - **Low-rank structure**: shared, global shifts (e.g. instruction-following style or planning drift).
+   - **Sparse structure**: prompt-specific residuals (“something unusual happened”).
+4. Use the sparse residual both as:
+   - an **anomaly score** (\(\|S_i\|_1\)), and
+   - a short list of **interpretable features** to intervene on.
+5. **Causally validate** both low-rank and sparse components by intervening on the implicated features and measuring changes in text *and* logit-space behavior.
 
-Many practical safety/robustness problems are about **detecting distribution shift / unusual internal computation**, not interpretability “for its own sake.” This prototype treats “weird prompts” as **outliers in model-difference activation space** and uses a structured decomposition to separate:
-- common, systematic differences (low-rank), from
-- rare, prompt-specific differences (sparse).
-
-The sparse component provides:
-1) an **anomaly score** per prompt (‖Sᵢ‖₁) and  
-2) a **short list of interpretable features** (the support of Sᵢ) to trace / intervene on.
-
----
-
-## TL;DR: What to look at first
-
-- 📓 **Notebook:** `notebooks/Transcoder_Anomaly_Detection_FellowshipReady.ipynb`  
-  End-to-end methodology + single-prompt and multi-prompt intervention evaluation.
-- 🌐 **Qualitative report:** `report_top10.html`  
-  Side-by-side outputs for Baseline vs Low-rank-removed vs Sparse-removed on top prompts.
-- 🧰 **Scripts:** `scripts/`  
-  A reproducible pipeline: prompt set → feature matrices → decomposition → interventions.
-
----
-
-## Repository layout
+To goal is to understand activation monitoring and see if the sparse component can act as anomaly detection.
 
 
-```
-notebooks/
-Transcoder_Anomaly_Detection_FellowshipReady.ipynb
+## Files
 
-scripts/
-promptset_v0.py # small safe prompt generator (JSONL)
-collect_feature_matrices.py # collect feature activations for base + IT, build Δ
-lowrank_sparse_anomaly.py # decompose Δ into low-rank + sparse + rank/τ sweeps
-make_case.py # select top anomaly prompt + top sparse features
-intervene.py # single-prompt intervention demo
-batch_intervene_topk.py # multi-prompt quantitative comparison -> CSV
-trace_cli.py # (optional) wrapper for circuit-tracing graphs
-utils.py
+- `notebooks/Transcoder_Anomaly_Detection.ipynb`  
+  Single-prompt test and multi-prompt eval.
+- `report_top10.html`  
+  Side-by-side baseline vs low-rank/sparse interventions
+- `scripts/`  
+  A reproducible pipeline from prompt sets → feature matrices → decomposition → interventions.
 
-outputs/
-step2*/feature_matrices.pt # cached matrices (F_base, F_it, Δ, feature list, prompts, meta)
-step3*/decomp.pt # decomposition (L, S, scores, thresholds, etc.)
-step4*/... # cases, CSVs, graphs
-```
 
----
 
-## Setup
 
-### Environment
-- Python 3.10+ recommended
-- One GPU strongly recommended (tested on CUDA); CPU may be slow.
+## Reproducing the pipeline (scripts)
 
-### Install dependencies
-You need:
-- `torch`, `numpy`, `pandas`, `tqdm`, `matplotlib`
-- **`circuit-tracer==0.1.0`** (this repo assumes circuit-tracer v0.1.0)
-- HuggingFace model access (Gemma weights)
-
-Example:
+1. Generate prompt set:
 ```bash
-pip install torch numpy pandas tqdm matplotlib
-pip install circuit-tracer==0.1.0
+python scripts/promptset_v0.py --out data/prompts_v0.jsonl --n 40
+```
+
+2. Collect feature matrices and Δ:
+```bash
+python scripts/collect_feature_matrices.py   --prompts data/prompts_v0.jsonl   --outdir outputs/step2   --layer 25   --base_model google/gemma-2-2b   --it_model google/gemma-2-2b-it
+```
+Outputs `feature_matrices.pt` containing `F_base`, `F_it`, and `Delta`.).
+
+3. Low-rank + sparse decomposition:
+```bash
+python scripts/lowrank_sparse_anomaly.py   --inpt outputs/step2/feature_matrices.pt   --outdir outputs/step3   --rank 4   --tau_percentile 95
+```
+
+4. Select a case and run interventions:
+```bash
+python scripts/make_case.py   --outputs_dir outputs   --k_features 3   --out outputs/step4/case.json
+
+python scripts/intervene.py   --case outputs/step4/case.json   --model google/gemma-2-2b-it   --k_features 3
+```
+
+5. Multi-prompt quantitative evaluation (recommended)
+```bash
+python scripts/batch_intervene_topk.py   --fm outputs/step2/feature_matrices.pt   --decomp outputs/step3/decomp.pt   --out outputs/step4/batch_results.csv   --topk_prompts 15
+```
+
+## Typical results and next steps
+
+In some cases:
+- **Low-rank removal** produces broad, early shifts in generation (often changing response trajectory quickly).
+- **Sparse removal** is more prompt-selective, often acting as subthreshold pressure that only causes divergence later, especially on prompts with strict formatting or structural constraints.
+
+Next steps:
+- Using full Robust PCA / PCP solvers instead of PCA + thresholding.
+- Aggregating across layers or generated-token windows.
+- Explicit distribution-shift splits across prompt families.
+- Tighter integration with attribution graphs for feature-to-circuit tracing.
+
+## Data format for prompts
+
+Scripts expect a JSONL file where each line is:
+```json
+{"id": 0, "text": "Answer in exactly two sentences. Explain containerization."}
 ```
