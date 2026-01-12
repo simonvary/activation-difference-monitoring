@@ -19,7 +19,7 @@ details summary { cursor: pointer; font-weight: 600; }
 <div class="card">
   <details open>
     <summary>#1 · prompt_index=290</summary>
-    <div class="meta"><span class='badge'>sparse_score_L1: 172</span> <span class='badge'>lr_l1_step0: 0.43</span> <span class='badge'>sp_l1_step0: 0.164</span> <span class='badge'>lr_diverge_step: 15</span> <span class='badge'>sp_diverge_step: 16</span> <span class='badge'>lr_l1_auc_prediv: 3.12</span> <span class='badge'>sp_l1_auc_prediv: 3.23</span></div>
+    <div class="meta"><span class='badge'>sparse_score_L1: 172</span> <span class='badge'>lr_l1_step0: 0.429</span> <span class='badge'>sp_l1_step0: 0.164</span> <span class='badge'>lr_diverge_step: 15</span> <span class='badge'>sp_diverge_step: 16</span> <span class='badge'>lr_l1_auc_prediv: 3.05</span> <span class='badge'>sp_l1_auc_prediv: 3.19</span></div>
     <div class="small"><b>Prompt</b></div>
     <pre>Answer in exactly two sentences. Use a formal tone. Explain containerization. Do not use the word &#x27;very&#x27;.</pre>
   </details>
@@ -53,7 +53,7 @@ Containerization is a method of packaging software and its dependencies into a s
 <div class="card">
   <details open>
     <summary>#2 · prompt_index=27</summary>
-    <div class="meta"><span class='badge'>sparse_score_L1: 188</span> <span class='badge'>lr_l1_step0: 0.269</span> <span class='badge'>sp_l1_step0: 0.344</span> <span class='badge'>lr_diverge_step: 4</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 1.51</span> <span class='badge'>sp_l1_auc_prediv: 3.2</span></div>
+    <div class="meta"><span class='badge'>sparse_score_L1: 188</span> <span class='badge'>lr_l1_step0: 0.256</span> <span class='badge'>sp_l1_step0: 0.344</span> <span class='badge'>lr_diverge_step: 4</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 1.51</span> <span class='badge'>sp_l1_auc_prediv: 3.16</span></div>
     <div class="small"><b>Prompt</b></div>
     <pre>Respond as CSV with headers: answer. Explain like I&#x27;m 10. Compare antibiotic resistance with a related concept. Include one short example in parentheses.</pre>
   </details>
@@ -79,31 +79,24 @@ On the other hand, fighting off a cold is like having a normal immune system. It
       <div class="title">Low-rank (remove L)</div>
       <pre>Respond as CSV with headers: answer. Explain like I&#x27;m 10. Compare antibiotic resistance with a related concept. Include one short example in parentheses. )
 
-## Antibiotic Resistance
+**Question**
+What is the difference between antibiotic resistance and a &quot;superbug&quot;?
 
-**Answer:** 
+**Answer**
+Antibiotic resistance is when bacteria become immune to the medicine we use to fight them (like a flu shot). 
+A superbug is a bacteria that is resistant to many different antibiotics (like a supervillain).
 
-Antibiotic resistance is like a game of hide and seek with germs (bacteria). 
+**Explanation**
 
-**Explanation:**
+Imagine a playground with kids (bacteria). Some kids (bacteria) are sick (infected). We (doctors) have a special medicine (antibiotic) to help them feel better (fight the infection).
 
-Imagine a germ is a sneaky little monster hiding in your body. Antibiotics are like special tools that help us find and zap the monster (kill it). 
+Antibiotic resistance is like a kid (bacteria) who learned to dodge the medicine (antibiotic). They might be a little bit sick (still infected), but they can still fight back and survive (not die).
 
-But sometimes, the monster gets smart and learns to hide better! It changes its hiding spot (becomes resistant to the antibiotic). Now the tool (antibiotic) can&#x27;t find it anymore and the monster is still alive and well (continues to cause problems).
+A superbug is a supervillain (bacteria) who is super strong and can dodge all the medicine (antibiotics). They can cause a lot of trouble (serious infections) and are hard to fight (difficult to treat).
 
-**Example:**
+**Example**
 
-Imagine a germ that loves to hide in a fort (inside a cell). If we use a tool (antibiotic) that can only open a certain door (target), the germ can hide in a different part of the fort (another hiding spot).
-
-**Related Concept:**
-
-**Evolution**
-
-Just like the monster in the game of hide and seek, germs can also evolve and change over time (like a chameleon). 
-
-**Explanation:**
-
-Evolution is like a slow but</pre>
+MRSA (Methicillin-resistant Staphylococcus aureus) is a</pre>
     </div>
     <div class="col">
       <div class="title">Sparse (remove S)</div>
@@ -115,19 +108,22 @@ Evolution is like a slow but</pre>
 answer,Explanation
 -------,-------
 Antibiotic resistance is like a superpower that some germs have. It means they can survive even when you take an antibiotic to fight them.  
-A cold is like a regular sickness that your body can fight off on its own. It&#x27;s like a tiny army of your body cells that work together to get rid of the bad stuff that makes you sick.
+A cold is like a regular sickness that your body can fight off on its own. It doesn&#x27;t need any special powers to get better.
 
 **Example:**
-(Imagine a tiny army of your body cells fighting off a cold virus. The virus is like a bad germ that wants to make you sick.)
+(Imagine a superhero with a special power to fight off any cold, that&#x27;s like antibiotic resistance.)
 
-**Explanation:**
-Antibiotic resistance is a problem because it makes it harder to treat infections. It&#x27;s like if your body&#x27;s army couldn&#x27;t fight off the bad germs anymore. 
- 
+
+**Question:** How is antibiotic resistance similar to a plant getting stronger after being exposed to sunlight?
+
+**Answer:**
+answer,Explanation
+-------,-------
+Antibiotic resistance is like a plant getting stronger after being exposed to sunlight.  
+Just like sunlight helps a plant grow stronger, exposure to antibiotics can make some germs stronger and more resistant to them.
+
 **Example:**
-(If your body&#x27;s army couldn&#x27;t fight off the bad germs anymore, you would need stronger medicine to help it.)
-
-
-</pre>
+(A plant that gets stronger after being exposed to sunlight is like a germ that becomes more resistant to an antibiotic.) </pre>
     </div>
   </div>
 </div>
@@ -135,42 +131,8 @@ Antibiotic resistance is a problem because it makes it harder to treat infection
 
 <div class="card">
   <details open>
-    <summary>#3 · prompt_index=52</summary>
-    <div class="meta"><span class='badge'>sparse_score_L1: 50.1</span> <span class='badge'>lr_l1_step0: 1.61</span> <span class='badge'>sp_l1_step0: 0.116</span> <span class='badge'>lr_diverge_step: 0</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 0</span> <span class='badge'>sp_l1_auc_prediv: 2.88</span></div>
-    <div class="small"><b>Prompt</b></div>
-    <pre>Answer in exactly two sentences. Use a witty tone. Explain phishing awareness. Include one emoji at the end.</pre>
-  </details>
-  <div style="height:10px"></div>
-  <div class="grid">
-    <div class="col">
-      <div class="title">Baseline</div>
-      <pre>Answer in exactly two sentences. Use a witty tone. Explain phishing awareness. Include one emoji at the end. 🤯
-
-Phishing awareness is like knowing your enemy&#x27;s secret handshake.  You&#x27;ll spot the red flags and avoid getting tricked by those sneaky emails and websites. 
-</pre>
-    </div>
-    <div class="col">
-      <div class="title">Low-rank (remove L)</div>
-      <pre>Answer in exactly two sentences. Use a witty tone. Explain phishing awareness. Include one emoji at the end. 🤔
-
-Phishing is like a bad magician trying to pull a rabbit out of a hat – it pretends to be something it&#x27;s not to trick you into giving away your secrets 🤫 
-</pre>
-    </div>
-    <div class="col">
-      <div class="title">Sparse (remove S)</div>
-      <pre>Answer in exactly two sentences. Use a witty tone. Explain phishing awareness. Include one emoji at the end. 🤯
-
-Phishing awareness is like knowing your enemy&#x27;s secret handshake.  You&#x27;ll spot the fake emails and calls a mile away, and your inbox will thank you for it. 
-</pre>
-    </div>
-  </div>
-</div>
-
-
-<div class="card">
-  <details open>
-    <summary>#4 · prompt_index=8</summary>
-    <div class="meta"><span class='badge'>sparse_score_L1: 163</span> <span class='badge'>lr_l1_step0: 0.377</span> <span class='badge'>sp_l1_step0: 1.14</span> <span class='badge'>lr_diverge_step: 15</span> <span class='badge'>sp_diverge_step: 19</span> <span class='badge'>lr_l1_auc_prediv: 2.35</span> <span class='badge'>sp_l1_auc_prediv: 2.81</span></div>
+    <summary>#3 · prompt_index=8</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 163</span> <span class='badge'>lr_l1_step0: 0.369</span> <span class='badge'>sp_l1_step0: 1.14</span> <span class='badge'>lr_diverge_step: 15</span> <span class='badge'>sp_diverge_step: 19</span> <span class='badge'>lr_l1_auc_prediv: 2.31</span> <span class='badge'>sp_l1_auc_prediv: 2.85</span></div>
     <div class="small"><b>Prompt</b></div>
     <pre>Respond as a JSON object with keys: headline, details. Use a witty tone. Explain blockchain. End with a single question.</pre>
   </details>
@@ -195,13 +157,16 @@ Phishing awareness is like knowing your enemy&#x27;s secret handshake.  You&#x27
 ```json
 {
   &quot;headline&quot;: &quot;Blockchain: Not Just Bitcoin&#x27;s Cousin Anymore&quot;,
-  &quot;details&quot;: &quot;Blockchain technology is like a digital ledger that&#x27;s super secure and transparent. Think of it as a giant spreadsheet shared across a bunch of computers, but instead of just numbers, it stores all sorts of data – from financial transactions to voting records.  It&#x27;s a bit like a digital version of a high school yearbook, but instead of gossip and embarrassing photos, it&#x27;s all about trust and security.  
+  &quot;details&quot;: &quot;Blockchain is like a digital ledger that&#x27;s super secure and transparent. Imagine a giant spreadsheet shared by everyone, but instead of just numbers, it&#x27;s filled with all sorts of information – transactions, contracts, even art!  It&#x27;s a bit like a digital town hall where everyone can see what&#x27;s happening, but no one can tamper with it.  It&#x27;s revolutionizing everything from finance to healthcare to voting – and it&#x27;s only just getting started.&quot;
+}
+```
 
-  The beauty of blockchain lies in its immutability – once a transaction is recorded on the blockchain, it&#x27;s practically impossible to tamper with.  It&#x27;s like a digital fingerprint that&#x27;s hard to erase.  
+## Blockchain: Not Just Bitcoin&#x27;s Cousin Anymore
 
-  So, while Bitcoin is the most famous blockchain application, it&#x27;s just the tip of the iceberg. Blockchain technology has the potential to revolutionize industries from healthcare to supply chain management, and even voting systems.  
-
-  But hey, before you start dreaming of a world without pesky paper trails, remember</pre>
+```json
+{
+  &quot;headline&quot;: &quot;Blockchain: Not Just Bitcoin&#x27;s Cousin Anymore&quot;,
+  &quot;details&quot;: &quot;Blockchain is like a digital ledger that&#x27;s super secure and transparent. Imagine a giant spreadsheet shared by everyone, but instead of just numbers, it&#x27;s filled with all sorts of information – transactions, contracts, even art!  It&#x27;s a</pre>
     </div>
     <div class="col">
       <div class="title">Sparse (remove S)</div>
@@ -228,8 +193,42 @@ Phishing awareness is like knowing your enemy&#x27;s secret handshake.  You&#x27
 
 <div class="card">
   <details open>
+    <summary>#4 · prompt_index=52</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 50.1</span> <span class='badge'>lr_l1_step0: 1.6</span> <span class='badge'>sp_l1_step0: 0.108</span> <span class='badge'>lr_diverge_step: 0</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 0</span> <span class='badge'>sp_l1_auc_prediv: 2.83</span></div>
+    <div class="small"><b>Prompt</b></div>
+    <pre>Answer in exactly two sentences. Use a witty tone. Explain phishing awareness. Include one emoji at the end.</pre>
+  </details>
+  <div style="height:10px"></div>
+  <div class="grid">
+    <div class="col">
+      <div class="title">Baseline</div>
+      <pre>Answer in exactly two sentences. Use a witty tone. Explain phishing awareness. Include one emoji at the end. 🤯
+
+Phishing awareness is like knowing your enemy&#x27;s secret handshake.  You&#x27;ll spot the red flags and avoid getting tricked by those sneaky emails and websites. 
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Low-rank (remove L)</div>
+      <pre>Answer in exactly two sentences. Use a witty tone. Explain phishing awareness. Include one emoji at the end. 🤔
+
+Phishing is like a bad magician trying to pull a rabbit out of a hat – it pretends to be something it&#x27;s not to trick you into giving away your precious data 😈 
+</pre>
+    </div>
+    <div class="col">
+      <div class="title">Sparse (remove S)</div>
+      <pre>Answer in exactly two sentences. Use a witty tone. Explain phishing awareness. Include one emoji at the end. 🤯
+
+Phishing awareness is like knowing your enemy&#x27;s secret handshake.  You&#x27;ll spot the fake emails and calls a mile away, and your inbox will thank you. 
+</pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <details open>
     <summary>#5 · prompt_index=207</summary>
-    <div class="meta"><span class='badge'>sparse_score_L1: 198</span> <span class='badge'>lr_l1_step0: 0.413</span> <span class='badge'>sp_l1_step0: 0.205</span> <span class='badge'>lr_diverge_step: 6</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 1.41</span> <span class='badge'>sp_l1_auc_prediv: 2.53</span></div>
+    <div class="meta"><span class='badge'>sparse_score_L1: 198</span> <span class='badge'>lr_l1_step0: 0.429</span> <span class='badge'>sp_l1_step0: 0.207</span> <span class='badge'>lr_diverge_step: 6</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 1.43</span> <span class='badge'>sp_l1_auc_prediv: 2.58</span></div>
     <div class="small"><b>Prompt</b></div>
     <pre>Answer in exactly 12 words. Explain like I&#x27;m a new employee on day 1. Compare gradient descent with a related concept. Include one short example in parentheses.</pre>
   </details>
@@ -292,7 +291,7 @@ Gradient descent is like finding the lowest point in a valley, but with a map.
 <div class="card">
   <details open>
     <summary>#6 · prompt_index=202</summary>
-    <div class="meta"><span class='badge'>sparse_score_L1: 48.7</span> <span class='badge'>lr_l1_step0: 1.58</span> <span class='badge'>sp_l1_step0: 0.0785</span> <span class='badge'>lr_diverge_step: 0</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 0</span> <span class='badge'>sp_l1_auc_prediv: 2.51</span></div>
+    <div class="meta"><span class='badge'>sparse_score_L1: 48.7</span> <span class='badge'>lr_l1_step0: 1.57</span> <span class='badge'>sp_l1_step0: 0.0786</span> <span class='badge'>lr_diverge_step: 0</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 0</span> <span class='badge'>sp_l1_auc_prediv: 2.52</span></div>
     <div class="small"><b>Prompt</b></div>
     <pre>Give two options and a recommendation. Use a formal tone. Explain fairness in AI. Include one emoji at the end.</pre>
   </details>
@@ -341,11 +340,11 @@ While both options present viable solutions, **Option 2** is generally recommend
 
 **Fairness in AI**
 
-Fairness in AI refers to the principle of ensuring that AI systems do not perpetuate or amplify existing societal biases and inequalities. This involves designing and deploying AI models that are **equitable** and **non-discriminatory**. 
+Fairness in AI refers to the principle of ensuring that AI systems and algorithms do not perpetuate or amplify existing societal biases and inequalities. This involves designing and deploying AI systems that are equitable and inclusive for all individuals and groups regardless of their demographic characteristics or social standing. 
 
-**Considerations for Fairness:**
+**Considerations for Fairness in AI Model Selection:**
 
-1. **Data Bias:**  The training data used to develop the AI model must be representative of the real world and free from biases that could lead to</pre>
+1. **Data Bias:** Assess the dataset used to train the model for potential biases that could</pre>
     </div>
     <div class="col">
       <div class="title">Sparse (remove S)</div>
@@ -376,8 +375,73 @@ While both options offer distinct advantages, **Option 2, developing a custom-tr
 
 <div class="card">
   <details open>
-    <summary>#7 · prompt_index=252</summary>
-    <div class="meta"><span class='badge'>sparse_score_L1: 38.5</span> <span class='badge'>lr_l1_step0: 1.59</span> <span class='badge'>sp_l1_step0: 0.0857</span> <span class='badge'>lr_diverge_step: 0</span> <span class='badge'>sp_diverge_step: 15</span> <span class='badge'>lr_l1_auc_prediv: 0</span> <span class='badge'>sp_l1_auc_prediv: 2.23</span></div>
+    <summary>#7 · prompt_index=174</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 47.1</span> <span class='badge'>lr_l1_step0: 0.459</span> <span class='badge'>sp_l1_step0: 0.212</span> <span class='badge'>lr_diverge_step: 0</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 0</span> <span class='badge'>sp_l1_auc_prediv: 2.34</span></div>
+    <div class="small"><b>Prompt</b></div>
+    <pre>Respond with a 3-bullet list. Explain like I&#x27;m a new employee on day 1. Explain HTTP status codes. Avoid the words &#x27;simple&#x27; and &#x27;just&#x27;.</pre>
+  </details>
+  <div style="height:10px"></div>
+  <div class="grid">
+    <div class="col">
+      <div class="title">Baseline</div>
+      <pre>Respond with a 3-bullet list. Explain like I&#x27;m a new employee on day 1. Explain HTTP status codes. Avoid the words &#x27;simple&#x27; and &#x27;just&#x27;. 
+
+Every request you make to a website, like a search engine or a social media platform, is a message sent to the server. The server processes this message and sends back a response. This response is a message back to you, containing information about the website&#x27;s status and the requested content.
+
+HTTP status codes are like a language that servers use to communicate with clients. They are numerical codes that indicate the outcome of a request. 
+
+Here are some common HTTP status codes:
+
+* **200 OK:** This is the most common status code, indicating that the server successfully processed the request and sent the requested content. Think of it as a &quot;success&quot; message.
+* **404 Not Found:** This code means the server couldn&#x27;t find the requested resource. It&#x27;s like a &quot;page not found&quot; error.
+* **500 Internal Server Error:** This code indicates that something went wrong on the server&#x27;s end. It&#x27;s like a &quot;server error&quot; message.
+
+Understanding these codes helps you troubleshoot issues and ensure your requests</pre>
+    </div>
+    <div class="col">
+      <div class="title">Low-rank (remove L)</div>
+      <pre>Respond with a 3-bullet list. Explain like I&#x27;m a new employee on day 1. Explain HTTP status codes. Avoid the words &#x27;simple&#x27; and &#x27;just&#x27;.
+
+Every time a web browser requests a web page or a file from a server, it sends a request. The server responds to that request with an HTTP status code. This code tells the browser how the server processed the request and whether the request was successful or not.
+
+Here&#x27;s a breakdown of common HTTP status codes:
+
+* **200 OK:** This is the most common status code. It indicates that the server successfully processed the request and the requested resource is available. 
+* **404 Not Found:** This code signals that the server couldn&#x27;t locate the requested resource. 
+* **500 Internal Server Error:** This code means that an error occurred on the server side and the server couldn&#x27;t fulfill the request.
+
+**Why are these codes important?**
+
+They are essential for communication between the browser and the server. They provide a clear and consistent way for both parties to understand the status of the request and the server&#x27;s response.
+
+**What do they mean for you?**
+
+As a new employee, you&#x27;ll be</pre>
+    </div>
+    <div class="col">
+      <div class="title">Sparse (remove S)</div>
+      <pre>Respond with a 3-bullet list. Explain like I&#x27;m a new employee on day 1. Explain HTTP status codes. Avoid the words &#x27;simple&#x27; and &#x27;just&#x27;. 
+
+Every request you make to a website, like a search engine or a social media platform, is a message sent to the server. The server processes this message and sends back a response. This response is a message back to you, containing information about the requested resource.
+
+HTTP status codes are like a language that servers use to communicate with clients. They are numerical codes that indicate the outcome of a request. 
+
+Here&#x27;s a breakdown of common HTTP status codes:
+
+* **200 OK:** This is the most common status code, indicating that the server successfully processed the request and sent back the requested resource. Think of it as a &quot;success&quot; message.
+* **404 Not Found:** This code means the server couldn&#x27;t find the requested resource. It&#x27;s like a &quot;page not found&quot; error.
+* **500 Internal Server Error:** This code signals that something went wrong on the server&#x27;s end. It&#x27;s like a &quot;server error&quot; message.
+
+Understanding these codes helps you troubleshoot issues, debug code, and ensure</pre>
+    </div>
+  </div>
+</div>
+
+
+<div class="card">
+  <details open>
+    <summary>#8 · prompt_index=252</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 38.5</span> <span class='badge'>lr_l1_step0: 1.59</span> <span class='badge'>sp_l1_step0: 0.0856</span> <span class='badge'>lr_diverge_step: 0</span> <span class='badge'>sp_diverge_step: 15</span> <span class='badge'>lr_l1_auc_prediv: 0</span> <span class='badge'>sp_l1_auc_prediv: 2.27</span></div>
     <div class="small"><b>Prompt</b></div>
     <pre>Respond with a headline and three subpoints. Be extra clear and step-by-step. Explain gravity. Include one emoji at the end.</pre>
   </details>
@@ -409,8 +473,8 @@ Gravity is a fundamental force of nature that attracts any two objects with mass
 Here&#x27;s a breakdown of how gravity works:
 
 1. **Mass Matters:** The more massive an object is, the stronger its gravitational pull. This is why the Earth has a stronger gravitational pull than a tennis ball because it has more mass. 
-2. **Distance Determines Strength:** The force of gravity weakens as the distance between two objects increases. This is why astronauts in space don&#x27;t fall to the ground – they are far away from the Earth and the Earth&#x27;s gravitational pull is weaker on them. 
-3. **Universal Attraction:** Gravity is a universal force that affects everything in the universe – from the smallest particles to the largest galaxies. It is a fundamental force of nature that governs the motion of celestial bodies and the formation of stars and planets 🚀 
+2. **Distance Determines Strength:** The force of gravity weakens as the distance between two objects increases. This is why the moon orbits the Earth at a certain distance – it&#x27;s far enough away that the Earth&#x27;s gravity isn&#x27;t strong enough to pull it in any closer. 
+3. **Universal Attraction:** Gravity acts on all objects in the universe – from the smallest particles to the largest galaxies – and it is a universal force that binds everything together 🚀 
 
 </pre>
     </div>
@@ -435,8 +499,8 @@ Here&#x27;s a breakdown of how gravity works:
 
 <div class="card">
   <details open>
-    <summary>#8 · prompt_index=133</summary>
-    <div class="meta"><span class='badge'>sparse_score_L1: 157</span> <span class='badge'>lr_l1_step0: 0.148</span> <span class='badge'>sp_l1_step0: 0.605</span> <span class='badge'>lr_diverge_step: 4</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 1.1</span> <span class='badge'>sp_l1_auc_prediv: 2.08</span></div>
+    <summary>#9 · prompt_index=133</summary>
+    <div class="meta"><span class='badge'>sparse_score_L1: 157</span> <span class='badge'>lr_l1_step0: 0.0855</span> <span class='badge'>sp_l1_step0: 0.605</span> <span class='badge'>lr_diverge_step: 4</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 1.09</span> <span class='badge'>sp_l1_auc_prediv: 2.1</span></div>
     <div class="small"><b>Prompt</b></div>
     <pre>Respond with a headline and three subpoints. Use a neutral, technical tone. Compare blockchain with a related concept. Do not use any emojis.</pre>
   </details>
@@ -464,9 +528,9 @@ Blockchain technology is often discussed in the context of cryptocurrencies, but
 
 Blockchain and Distributed Ledger Technology (DLT) are closely related concepts. While blockchain is a specific type of DLT, it possesses unique characteristics that distinguish it from other DLT implementations. 
 
-1. **Immutability:** Blockchain is known for its immutability, a property that ensures the permanent and unalterable nature of data stored on the blockchain. This immutability stems from the cryptographic hash functions used to link blocks together and the consensus mechanism employed to validate transactions. 
-2. **Transparency:** Blockchain transactions are publicly auditable and transparent due to the decentralized nature of the network and the public ledger that records all transactions. This transparency fosters trust and accountability among participants. 
-3. **Decentralization:** Blockchain operates on a decentralized network of nodes that collectively maintain and validate the blockchain ledger. This decentralized architecture mitigates single points of failure and enhances resilience against attacks or manipulation. 
+1. **Immutability:** Blockchain is known for its immutability, a property that ensures data stored on the blockchain cannot be altered or deleted after it is recorded. This immutability stems from the cryptographic hash function that links each block to the previous one, creating a chain of blocks that is virtually impossible to tamper with. 
+2. **Transparency:** Blockchain transactions are publicly auditable and transparent due to the decentralized nature of the network. This transparency fosters trust and accountability among participants in the blockchain ecosystem. 
+3. **Decentralization:** Blockchain operates on a decentralized network of nodes that collectively maintain the blockchain ledger. This decentralized architecture mitigates single points of failure and enhances resilience against attacks or manipulation by a single entity. 
 
 
 </pre>
@@ -492,79 +556,8 @@ Blockchain technology is often discussed in the context of cryptocurrencies, but
 
 <div class="card">
   <details open>
-    <summary>#9 · prompt_index=262</summary>
-    <div class="meta"><span class='badge'>sparse_score_L1: 40.1</span> <span class='badge'>lr_l1_step0: 1.64</span> <span class='badge'>sp_l1_step0: 0.163</span> <span class='badge'>lr_diverge_step: 0</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 0</span> <span class='badge'>sp_l1_auc_prediv: 2.06</span></div>
-    <div class="small"><b>Prompt</b></div>
-    <pre>Respond as a short FAQ with 3 questions. Explain like I&#x27;m a new employee on day 1. Explain supply and demand. Include one emoji at the end.</pre>
-  </details>
-  <div style="height:10px"></div>
-  <div class="grid">
-    <div class="col">
-      <div class="title">Baseline</div>
-      <pre>Respond as a short FAQ with 3 questions. Explain like I&#x27;m a new employee on day 1. Explain supply and demand. Include one emoji at the end.🧠
-
-**Q1: What is supply and demand?**
-
-**A:**  Think of it like this:  
-* **Supply** is how much of something is available.  Imagine a bakery making cookies. The more cookies they bake, the higher the supply. 🍪
-* **Demand** is how much people want that thing. If everyone in town is craving cookies, the demand is high. 
-
-**Q2: How do supply and demand affect prices?**
-
-**A:**  When supply is high and demand is low, prices go down.  Think of it like a sale!  But when supply is low and demand is high, prices go up.  That&#x27;s like a limited edition item everyone wants. 
-
-**Q3: How does this relate to my job?**
-
-**A:**  Understanding supply and demand helps you understand how our company makes decisions about pricing, production, and even what products we offer.  It&#x27;s a key part of running a successful business! 
-
- 
-</pre>
-    </div>
-    <div class="col">
-      <div class="title">Low-rank (remove L)</div>
-      <pre>Respond as a short FAQ with 3 questions. Explain like I&#x27;m a new employee on day 1. Explain supply and demand. Include one emoji at the end. 😊
-
-**Q1: What is supply and demand in a nutshell?**
-
-A1: Imagine a big pizza party 🎉  The more people want pizza (demand), the higher the price might go (because everyone wants it!). But if there&#x27;s a lot of pizza (supply), the price might go down (because there&#x27;s plenty to go around).
-
-**Q2: How does supply and demand affect our work here?**
-
-A2:  We need to understand how much of a product or service people want (demand) and how much we can provide (supply). If demand is high and supply is low, we might need to work extra hard to meet everyone&#x27;s needs. If demand is low and supply is high, we might have some extra time to focus on other things 😊
-
-**Q3: What does it mean for a company to &quot;meet the demand&quot;?**
-
-A3:  It means providing the right amount of products or services to satisfy the customers who want them.  It&#x27;s about finding the sweet spot between having enough to go</pre>
-    </div>
-    <div class="col">
-      <div class="title">Sparse (remove S)</div>
-      <pre>Respond as a short FAQ with 3 questions. Explain like I&#x27;m a new employee on day 1. Explain supply and demand. Include one emoji at the end.🧠
-
-**Q1: What is supply and demand?**
-
-**A:**  Think of it like this:  
-* **Supply** is how much of something is available.  Imagine a bakery making cookies. The more cookies they bake, the higher the supply. 🍪
-* **Demand** is how much people want that thing. If everyone in town is craving cookies, the demand is high. 
-
-**Q2: How do supply and demand affect prices?**
-
-**A:**  When supply is high and demand is low, prices go down.  Think of it like a sale! 🛍️  
-When supply is low and demand is high, prices go up.  This is like a limited edition item everyone wants. 
-
-**Q3: How do supply and demand work together?**
-
-**A:**  Supply and demand are always in a constant dance.  When one goes up, the other has to adjust.  If the bakery makes more cookies, the demand might go down, and the price might go down.  
-
-**</pre>
-    </div>
-  </div>
-</div>
-
-
-<div class="card">
-  <details open>
     <summary>#10 · prompt_index=81</summary>
-    <div class="meta"><span class='badge'>sparse_score_L1: 44.6</span> <span class='badge'>lr_l1_step0: 0.32</span> <span class='badge'>sp_l1_step0: 0.0541</span> <span class='badge'>lr_diverge_step: 7</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 2.24</span> <span class='badge'>sp_l1_auc_prediv: 2.05</span></div>
+    <div class="meta"><span class='badge'>sparse_score_L1: 44.6</span> <span class='badge'>lr_l1_step0: 0.32</span> <span class='badge'>sp_l1_step0: 0.054</span> <span class='badge'>lr_diverge_step: 7</span> <span class='badge'>sp_diverge_step: 20</span> <span class='badge'>lr_l1_auc_prediv: 2.21</span> <span class='badge'>sp_l1_auc_prediv: 2.06</span></div>
     <div class="small"><b>Prompt</b></div>
     <pre>Respond with &#x27;TL;DR:&#x27; then one line, then details. Use a formal tone. Compare cross-validation with a related concept. Include exactly one colon (:) in your response.</pre>
   </details>
@@ -586,11 +579,12 @@ Bootstrapping involves creating multiple samples from the original dataset by ra
       <div class="title">Low-rank (remove L)</div>
       <pre>Respond with &#x27;TL;DR:&#x27; then one line, then details. Use a formal tone. Compare cross-validation with a related concept. Include exactly one colon (:) in your response.
 
-Cross-validation is a technique for evaluating the performance of a machine learning model by partitioning the dataset into multiple folds and iteratively training and evaluating the model on different subsets of the data. This process helps to mitigate overfitting and provides a more robust estimate of the model&#x27;s performance on unseen data. 
+Cross-validation is a technique for evaluating the performance of a machine learning model by partitioning the dataset into multiple folds and iteratively training and evaluating the model on different subsets of the data. This process is analogous to a **k-fold cross-validation** which involves dividing the dataset into k equal parts and iteratively training and evaluating the model on k different subsets of the data :
 
-A related concept is k-fold cross-validation which is a specific type of cross-validation that uses k folds of the dataset for training and testing the model. 
+TL;DR : Cross-validation is analogous to k-fold cross-validation :
 
-TL;DR: K-fold cross-validation is a specific type of cross-validation that uses k folds of the dataset for training and testing the model :  It is a subset of cross-validation that utilizes a fixed number of folds (k). 
+Cross-validation is a technique for evaluating the performance of a machine learning model by partitioning the dataset into multiple folds and iteratively training and evaluating the model on different subsets of the data. This process is analogous to a **k-fold cross-validation** which involves dividing the dataset into k equal parts and iteratively training and evaluating the model on k different subsets of the data :
+
 </pre>
     </div>
     <div class="col">
