@@ -8,17 +8,17 @@ This repository contains a compact proof-of-concept for **activation anomaly det
 
 The repo is to learn interpretability workflow: detecting *when* internal computation is unusual, localizing *which features* are responsible, and validating that signal with controlled interventions.
 
-## Why this project
+## Project overview
 
 This project aims to monitor difference between two models:
 
 1. Run the same prompt through two closely related models (base vs instruction-tuned).
-2. Compute **feature-level activation deltas** \(\Delta = F_{IT} - F_{base}\).
-3. Decompose \(\Delta\) into:
-   - **Low-rank structure**: shared, global shifts (e.g. instruction-following style or planning drift).
-   - **Sparse structure**: prompt-specific residuals (“something unusual happened”).
+2. Compute **feature-level activation deltas** ($\Delta = F_{IT} - F_{base}$).
+3. Decompose $\Delta$ into $L + S$ where:
+   - $L$ is **low-rank structure**: shared, global shifts (e.g. instruction-following style or planning drift).
+   - $S$ is **sparse structure**: prompt-specific residuals (“something unusual happened”).
 4. Use the sparse residual both as:
-   - an **anomaly score** (\(\|S_i\|_1\)), and
+   - an **anomaly score** $\|S_i\|_1$, and
    - a short list of **interpretable features** to intervene on.
 5. **Causally validate** both low-rank and sparse components by intervening on the implicated features and measuring changes in text *and* logit-space behavior.
 
